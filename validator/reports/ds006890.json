@@ -1,0 +1,364 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:38:58+00:00"
+ },
+ "dataset": {
+  "id": "ds006890",
+  "name": "Longitudinal Multitask Wireless ECoG Data from Two Fully Implanted Macaca fuscata",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006890.v1.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.9.0",
+  "species": "macaca fuscata",
+  "n_subjects": 2,
+  "n_recordings_listed": 870,
+  "n_recordings_read": 400,
+  "sampled": true,
+  "n_data_files": 870,
+  "data_formats": [
+   ".edf"
+  ],
+  "total_size_gb": 44.21,
+  "sampling_rates_hz": {
+   "1000.0": 400
+  },
+  "hours_declared": 48.8,
+  "electrode_types": {
+   "ECOG": 12800
+  },
+  "manufacturers": {
+   "CorTec GmbH": 400
+  }
+ },
+ "score": 0.852,
+ "grade": "B",
+ "categories": {
+  "identity": 0.889,
+  "acquisition": 1.0,
+  "channels": 0.923,
+  "localization": 0.556,
+  "subjects": 0.6,
+  "labels": 1.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds006890.v1.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 2018 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "EthicsApprovals missing"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "870 iEEG data files (.edf)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "Manufacturer given in 100% of 400 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "ManufacturersModelName given in 100% of 400 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 400 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 400 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 400 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "iEEGReference given in 100% of 400 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 400 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 1000.0 Hz \u00d7400"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 400 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 400 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "0 scalp/EKG channels typed as iEEG (of 12800 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 400 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": false,
+   "detail": "units given in 0% of 400 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 400"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "2 of 2 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 2 subjects (sampled)"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "coordinate systems: Other \u00d7282"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "template (MNI-type) coordinates not available; spaces: ['OTHER']"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 9024 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'participant_id', 'sex', 'species']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": true,
+   "detail": "events.tsv (non-empty) for 100% of 258 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "5 distinct labels; top: ['ssep_stim', 'movement_start', 'stimulus_on', 'movement_done', 'rest_start']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": true,
+   "detail": "TaskDescription for 100% of 400 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-monkeyb/ses-day09/ieeg/sub-monkeyb_ses-day09_task-rest_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds006890/sub-monkeyb/)",
+   "sfreq": 1000.0,
+   "n_ieeg_channels": 32,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "CH01"
+   ],
+   "bids_bad_channels": [
+    "CH09"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "CH01"
+   ],
+   "line_noise_ratio": 0.9397365775224041,
+   "measured_band_limit_hz": 500.0,
+   "nyquist_hz": 500.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": {
+    "HighpassFilter": {
+     "CutoffFrequency": 2
+    },
+    "LowpassFilter": {
+     "CutoffFrequency": 325
+    }
+   }
+  },
+  {
+   "recording": "sub-monkeyc/ses-day120/ieeg/sub-monkeyc_ses-day120_task-rest_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds006890/sub-monkeyc/)",
+   "sfreq": 1000.0,
+   "n_ieeg_channels": 50,
+   "seconds_measured": 120.0,
+   "flat_channels": [
+    "EXT01",
+    "TR01",
+    "TR02",
+    "TR03",
+    "TR04",
+    "TR05",
+    "TR06",
+    "TR07",
+    "TR08",
+    "TR09",
+    "TR10",
+    "TR11",
+    "TR12",
+    "TR13",
+    "TR14",
+    "TR15",
+    "TR16"
+   ],
+   "variance_outliers": [
+    "CH26",
+    "Misc_InterpMask"
+   ],
+   "bids_bad_channels": [],
+   "unmarked_flat": [
+    "EXT01",
+    "TR01",
+    "TR02",
+    "TR03",
+    "TR04",
+    "TR05",
+    "TR06",
+    "TR07",
+    "TR08",
+    "TR09",
+    "TR10",
+    "TR11",
+    "TR12",
+    "TR13",
+    "TR14",
+    "TR15",
+    "TR16"
+   ],
+   "unmarked_outliers": [
+    "CH26",
+    "Misc_InterpMask"
+   ],
+   "line_noise_ratio": null,
+   "measured_band_limit_hz": 500.0,
+   "nyquist_hz": 500.0,
+   "declared_software_filters": null,
+   "declared_hardware_filters": null
+  }
+ ]
+}

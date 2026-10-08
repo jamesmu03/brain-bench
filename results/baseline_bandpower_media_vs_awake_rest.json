@@ -1,0 +1,25 @@
+{
+  "submission": "baseline_bandpower.py",
+  "sha256": "4ddc88a23de22f135dae668e6501bb9e439e60e4a8b54d43e5ac315c7c114f07",
+  "model": "BandpowerLogReg",
+  "task": "media_vs_awake_rest",
+  "dataset": null,
+  "release": "pilot",
+  "schema_version": "0.1.0",
+  "holdout_source": "ajile12",
+  "evaluated_at": "2026-10-03T21:02:12+00:00",
+  "results": {
+    "test": {
+      "n_windows": 282,
+      "n_subjects": 2,
+      "balanced_accuracy": 0.5549437675726335,
+      "auroc": 0.578842549203374
+    },
+    "test_xdevice": {
+      "n_windows": 795,
+      "n_subjects": 2,
+      "balanced_accuracy": 0.4908854166666667,
+      "auroc": 0.20793098641524738
+    }
+  }
+}

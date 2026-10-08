@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trust report · 000576</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#163f78;--navy-dark:#0b1f3f;--ink:#0f1724;--ink-2:#2b3443;--muted:#6f7681;--faint:#9aa0a9;--line:#e8e4db;--cream:#f8f6f1;--cream-2:#f2efe8;--paper:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:15.5px/1.6 Inter,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:900px;margin:0 auto;padding:40px 24px 64px}
+.top{display:flex;justify-content:space-between;align-items:baseline;color:var(--muted);font-size:13px;margin-bottom:28px}
+.top b{color:var(--ink);font-weight:600;letter-spacing:.02em}
+h1{font-weight:400;font-size:34px;letter-spacing:-.025em;line-height:1.15;margin:0 0 6px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 28px}
+.meta a{color:var(--navy)}
+.verdict{background:var(--navy-dark);color:#fff;border-radius:16px;padding:26px 28px;margin-bottom:22px}
+.verdict .label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.verdict h2{font-weight:400;font-size:26px;letter-spacing:-.02em;margin:6px 0 10px}
+.verdict p{margin:0;color:rgba(255,255,255,.8)}
+.grades{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 30px}
+.g{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.g b{display:block;font-weight:400;font-size:30px;letter-spacing:-.02em;color:var(--navy);line-height:1}
+.g span{display:block;margin-top:6px;font-size:13px;color:var(--muted)}
+h3{font-weight:500;font-size:20px;letter-spacing:-.01em;margin:34px 0 12px}
+.risk{background:var(--paper);border:1px solid var(--line);border-left:4px solid #e0a43a;border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.risk.conflict{border-left-color:#c2410c}
+.risk b{font-weight:600}
+.risk p{margin:4px 0 0;color:var(--ink-2);font-size:14.5px}
+.q{color:var(--muted);font-size:13.5px;margin-top:6px}
+ul.ok{margin:0;padding-left:18px;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13.5px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:500;padding:10px 12px;border-bottom:1px solid var(--line)}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.s-attested{background:#163f78;color:#fff}.s-inferred{background:#d9e4f4;color:#11305c}.s-conflict{background:#fff4dc;color:#7a4b00}.s-missing{background:#fde8e8;color:#8a1c1c}
+.small{color:var(--muted);font-size:13px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+@media print{body{background:#fff}.verdict{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media (max-width:700px){.grades{grid-template-columns:1fr}}
+</style></head><body><div class=page>
+<div class=top><b>brain-bench · TRUST REPORT</b><span>6 October 2026</span></div>
+<h1>Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation</h1>
+<p class=meta>dandi 000576 · version 0.231010.1811 · NWB · 9 subjects · <a href="https://dandiarchive.org/dandiset/000576/0.231010.1811">archive page</a></p>
+
+<div class=verdict><div class=label>Verdict</div><h2>Usable with care</h2><p>3 only stated in the paper.</p></div>
+<div class=grades>
+<div class=g><b>D</b><span>The data as deposited (0.58)</span></div>
+<div class=g><b>C</b><span>Counting what the paper adds, unconfirmed (0.76)</span></div>
+<div class=g><b>A</b><span>If the authors confirmed it (0.94)</span></div>
+</div>
+
+<h3>What to watch for</h3>
+<div class=risk><b>Electrode types and counts: only in the paper.</b><p>The paper says: Depth electrodes (AdTech, 8 contacts each) in amygdala, each with nine microelectrodes. The data doesn't state it, so treat this as unconfirmed. Grid, strip and depth contacts record different things; mixing them blindly biases any model.</p><div class=q>“Each mac- roelectrode had nine microelectrodes that protruded approximately 4 mm from its tip (Fig. 1b).” · 10.1038/s41597-020-00790-x</div></div><div class=risk><b>Electrode localization method: only in the paper.</b><p>The paper says: Postimplantation CT registered to postimplantation T1 MRI in FieldTrip (ACPC), contacts visually marked, normalized to MNI space, labeled with Brainnetome; verified by neurosurgeon. The data doesn't state it, so treat this as unconfirmed. You can't place contacts reliably in a shared brain space, so cross-patient analysis is limited.</p><div class=q>“The contact positions were normalized to the MNI space and assigned to a brain region using Brainnetome23.” · 10.1038/s41597-020-00790-x</div></div><div class=risk><b>Subjects by diagnosis: only in the paper.</b><p>The paper says: 9 patients with drug-resistant focal epilepsy. The data doesn't state it, so treat this as unconfirmed. You can't tell which patient population a model would be learning from.</p><div class=q>“All participants were patients with drug-resistant focal epilepsy.” · 10.1038/s41597-020-00790-x</div></div><div class=risk><b>Consent scope: only in the paper.</b><p>The paper says: Written informed consent to participate in the study. The data doesn't state it, so treat this as unconfirmed. It's unclear whether reuse, especially commercial reuse, is covered by what patients agreed to.</p><div class=q>“All participants provided written informed consent to participate in the study.” · 10.1038/s41597-020-00790-x</div></div><div class=risk><b>Ethics approval: only in the paper.</b><p>The paper says: Kantonale Ethikkommission Zürich, PB-2016-02055. The data doesn't state it, so treat this as unconfirmed. There is no record of ethics approval to point to if your use is questioned.</p><div class=q>“The study was approved by the institutional ethics review board (Kantonale Ethikkommission Zürich, PB-2016-02055).” · 10.1038/s41597-020-00790-x</div></div>
+
+<h3>What the data states</h3>
+<ul class=ok><li>Sampling rate</li><li>Filter settings</li><li>Recording system / amplifier</li><li>Reference scheme</li><li>Task design</li><li>Event annotations</li><li>License</li><li>Linked publication DOI</li></ul>
+
+<h3>All fields</h3>
+<table><thead><tr><th>Field</th><th>Status</th><th>In the data</th><th>In the paper</th></tr></thead><tbody><tr><td>Sampling rate<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>2000 Hz</td><td>4 kHz macroelectrodes (resampled to 2 kHz); 32 kHz microelectrodes</td></tr><tr><td>Filter settings<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>Passband, 0.5 to 1000 Hz</td><td>0.5–5000 Hz acquisition passband; &gt;300 Hz high-pass for spike detection</td></tr><tr><td>Recording system / amplifier<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>Neuralynx, Inc. iEEG recording system</td><td>Neuralynx ATLAS recording system</td></tr><tr><td>Electrode types and counts<div class=small>required</div></td><td><span class='pill s-inferred'>From the paper</span></td><td>unspecified</td><td>Depth electrodes (AdTech, 8 contacts each) in amygdala, each with nine microelectrodes</td></tr><tr><td>Reference scheme<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>Common intracranial reference</td><td>Recorded against common intracranial reference; bipolar re-referenced version also shared</td></tr><tr><td>Electrode localization method<div class=small>required</div></td><td><span class='pill s-inferred'>From the paper</span></td><td>coordinates given, coordinate space not stated</td><td>Postimplantation CT registered to postimplantation T1 MRI in FieldTrip (ACPC), contacts visually marked, normalized to MNI space, labeled…</td></tr><tr><td>Subjects by diagnosis<div class=small>required</div></td><td><span class='pill s-inferred'>From the paper</span></td><td>n_subjects</td><td>9 patients with drug-resistant focal epilepsy</td></tr><tr><td>License<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>spdx:CC-BY-4.0</td><td><span class=small>—</span></td></tr><tr><td>Task design<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>Task Name: Jokeit Task Description: We used a paradigm comprising of a series of dynamic videos, which has been already validated in…</td><td>Block design viewing of aversive dynamic fearful face video clips vs neutral landscape clips, 24 s blocks with 2 s neutral baseline</td></tr><tr><td>Event annotations<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>tables: trials</td><td>yes; trial conditions (aversive/neutral) per trial</td></tr><tr><td>Consent scope<div class=small>recommended</div></td><td><span class='pill s-inferred'>From the paper</span></td><td><span class=small>—</span></td><td>Written informed consent to participate in the study</td></tr><tr><td>Ethics approval<div class=small>recommended</div></td><td><span class='pill s-inferred'>From the paper</span></td><td><span class=small>—</span></td><td>Kantonale Ethikkommission Zürich, PB-2016-02055</td></tr><tr><td>Linked publication DOI<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>dataset_doi: 10.48324/dandi.000576/0.231010.1811; publication_dois: 10.1016/j.neuroimage.2020.116705, 10.1038/s41597-020-00790-x…</td><td>10.12751/g-node.270z59; 10.18112/openneuro.ds003374.v1.1.1</td></tr><tr><td>Medication status<div class=small>optional</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td><span class=small>—</span></td></tr><tr><td>De-identification method<div class=small>optional</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td><span class=small>—</span></td></tr></tbody></table>
+
+<h3>How we checked</h3>
+<p class=small>We read the dataset's descriptive files (sidecars, channel and electrode tables, NWB headers) without downloading the recordings, and the open-access paper(s) describing it (10.1038/s41597-020-00790-x). Values from a paper are only used when backed by a sentence quoted word for word from it, and they stay labelled as unconfirmed. We check that information is present and consistent; we don't judge the science. Paywalled papers are not read.</p>
+
+<footer>brain-bench grades are independent: whoever pays for a report has no say in its result. This report refers to the dataset version above.</footer>
+</div></body></html>

@@ -1,0 +1,280 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:20:03+00:00"
+ },
+ "dataset": {
+  "id": "ds004774",
+  "name": "Automatic Evoked Response Detection (ER-Detect) dataset",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004774.v1.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "Brain Imaging Data Structure Specification v1.8.0",
+  "species": "unknown",
+  "n_subjects": 14,
+  "n_recordings_listed": 14,
+  "n_recordings_read": 14,
+  "sampled": false,
+  "n_data_files": 9,
+  "data_formats": [
+   ".vhdr"
+  ],
+  "total_size_gb": 32.39,
+  "sampling_rates_hz": {
+   "2048": 14
+  },
+  "hours_declared": 11.9,
+  "electrode_types": {
+   "ECOG": 908,
+   "SEEG": 60
+  },
+  "manufacturers": {
+   "Micromed": 9,
+   "Natus Medical Inc": 5
+  }
+ },
+ "score": 0.741,
+ "grade": "C",
+ "categories": {
+  "identity": 0.889,
+  "acquisition": 0.929,
+  "channels": 0.846,
+  "localization": 0.222,
+  "subjects": 0.4,
+  "labels": 1.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds004774.v1.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "README 0 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "EthicsApprovals present"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "9 iEEG data files (.vhdr)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "Manufacturer given in 100% of 14 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 64% of 14 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 14 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 14 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 14 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "iEEGReference given in 100% of 14 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 14 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 2048 Hz \u00d714"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 14 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": false,
+   "detail": "98.8% of channels have a valid BIDS type; invalid e.g. ['']"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 14 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "0 scalp/EKG channels typed as iEEG (of 968 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 14 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 14 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 14"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 14 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": false,
+   "detail": "electrode positions for 36% of 14 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "coordinate systems: Other \u00d75"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "template (MNI-type) coordinates not available; spaces: ['OTHER']"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "98% of 309 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'participant_id', 'sex']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": false,
+   "detail": "participants.json missing"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": true,
+   "detail": "events.tsv (non-empty) for 100% of 14 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "1 distinct labels; top: ['electrical_stimulation']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": true,
+   "detail": "TaskDescription for 100% of 14 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "note": "no recordings under 400 MB to sample"
+  }
+ ]
+}

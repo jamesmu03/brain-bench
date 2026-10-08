@@ -1,0 +1,319 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:31:10+00:00"
+ },
+ "dataset": {
+  "id": "ds006065",
+  "name": "TSS_iEEG",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006065.v1.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.8",
+  "species": "human",
+  "n_subjects": 7,
+  "n_recordings_listed": 45,
+  "n_recordings_read": 45,
+  "sampled": false,
+  "n_data_files": 45,
+  "data_formats": [
+   ".vhdr"
+  ],
+  "total_size_gb": 10.34,
+  "sampling_rates_hz": {
+   "500": 45
+  },
+  "hours_declared": 10.7,
+  "electrode_types": {
+   "SEEG": 6140
+  },
+  "manufacturers": {
+   "None": 45
+  }
+ },
+ "score": 0.556,
+ "grade": "D",
+ "categories": {
+  "identity": 0.778,
+  "acquisition": 0.357,
+  "channels": 0.692,
+  "localization": 1.0,
+  "subjects": 0.0,
+  "labels": 0.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds006065.v1.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "no citation guidance"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 1897 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "EthicsApprovals missing"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "45 iEEG data files (.vhdr)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 45 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 45 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 45 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "hardware filters stated for 0% of 45 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 45 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "iEEGReference given in 0% of 45 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 45 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 500 Hz \u00d745"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 45 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 45 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": false,
+   "detail": "300 scalp/EKG channels typed as iEEG (of 6140 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": false,
+   "detail": "status column in 0% of 45 channel tables; no channel ever marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 45 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 45"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 7 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 7 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "coordinate systems: MNI152NLin2009cAsym \u00d77"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "template (MNI-type) coordinates available"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 885 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "participants.tsv columns: ['participant_id']; age/sex filled: []"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": false,
+   "detail": "participants.json missing"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": false,
+   "detail": "events.tsv (non-empty) for 0% of 45 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": null,
+   "detail": "no event labels"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": false,
+   "detail": "TaskDescription for 0% of 45 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-UC004/ieeg/sub-UC004_task-clcontrol_ieeg.vhdr",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds006065/sub-UC004/ie)",
+   "sfreq": 499.66666662053075,
+   "n_ieeg_channels": 43,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "RHT6",
+    "RHT7"
+   ],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "RHT6",
+    "RHT7"
+   ],
+   "line_noise_ratio": 144.44523512948192,
+   "measured_band_limit_hz": 249.5041611537666,
+   "nyquist_hz": 249.83333331026537,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": "n/a"
+  },
+  {
+   "recording": "sub-p17/ieeg/sub-p17_task-restcontrolpre_ieeg.vhdr",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds006065/sub-p17/ieeg)",
+   "sfreq": 499.99830500574603,
+   "n_ieeg_channels": 175,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "AC15"
+   ],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "AC15"
+   ],
+   "line_noise_ratio": 1461.3641057606478,
+   "measured_band_limit_hz": 240.07818745163317,
+   "nyquist_hz": 249.99915250287302,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": "n/a"
+  }
+ ]
+}

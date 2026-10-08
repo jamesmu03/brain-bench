@@ -1,0 +1,371 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:35:29+00:00"
+ },
+ "dataset": {
+  "id": "ds003876",
+  "name": "Epilepsy-iEEG-Interictal-Multicenter-Dataset",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds003876.v1.0.2",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.6.0",
+  "species": "human",
+  "n_subjects": 39,
+  "n_recordings_listed": 54,
+  "n_recordings_read": 54,
+  "sampled": false,
+  "n_data_files": 54,
+  "data_formats": [
+   ".edf"
+  ],
+  "total_size_gb": 5.52,
+  "sampling_rates_hz": {
+   "1000.0": 25,
+   "2000.0": 7,
+   "999.4121105232217": 6,
+   "1024.0": 5,
+   "999.9999999999999": 4,
+   "500.0": 2,
+   "499.7071044492829": 2,
+   "1024.5997950800408": 2,
+   "512.0": 1
+  },
+  "hours_declared": 5.8,
+  "electrode_types": {
+   "SEEG": 4137,
+   "ECOG": 2431
+  },
+  "manufacturers": {
+   "n/a": 54
+  }
+ },
+ "score": 0.688,
+ "grade": "C",
+ "categories": {
+  "identity": 1.0,
+  "acquisition": 0.571,
+  "channels": 0.846,
+  "localization": 0.0,
+  "subjects": 1.0,
+  "labels": 0.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds003876.v1.0.2"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 3075 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "EthicsApprovals present"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "54 iEEG data files (.edf)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 54 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 54 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 54 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 54 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 54 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "iEEGReference given in 0% of 54 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 54 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 1000.0 Hz \u00d725, 2000.0 Hz \u00d77, 999.4121105232217 Hz \u00d76, 1024.0 Hz \u00d75, 999.9999999999999 Hz \u00d74, 500.0 Hz \u00d72, 499.7071044492829 Hz \u00d72, 1024.5997950800408 Hz \u00d72, 512.0 Hz \u00d71"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 54 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 54 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": false,
+   "detail": "154 scalp/EKG channels typed as iEEG (of 6568 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 54 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 54 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 54"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 39 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": false,
+   "detail": "electrode positions for 0% of 39 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no electrodes.tsv"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'engel_score', 'ethnicity', 'hand', 'ilae_score', 'outcome', 'participant_id', 'sex', 'site', 'years_follow_up']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "clinical/implant columns: ['outcome']"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": false,
+   "detail": "events.tsv (non-empty) for 60% of 25 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "63 distinct labels; top: ['Schedule', 'XLSpike', '+0.000000', 'A1+A2 OFF', 'Clip Note', 'clip']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": false,
+   "detail": "TaskDescription for 0% of 54 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-NIH1/ses-extraoperative/ieeg/sub-NIH1_ses-extraoperative_task-interictal_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds003876/sub-NIH1/ses)",
+   "sfreq": 1024.0,
+   "n_ieeg_channels": 184,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "EEG RAI12-G2",
+    "EEG RMI1-G2",
+    "EEG RMI2-G2",
+    "EEG RMI7-G2",
+    "EEG RMI8-G2",
+    "EEG RPT16-G2",
+    "EEG ain1-G2",
+    "EEG ain17-G2",
+    "EEG ain4-G2",
+    "EEG din1-G2"
+   ],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "EEG RAI12-G2",
+    "EEG RMI1-G2",
+    "EEG RMI2-G2",
+    "EEG RMI7-G2",
+    "EEG RMI8-G2",
+    "EEG RPT16-G2",
+    "EEG ain1-G2",
+    "EEG ain17-G2",
+    "EEG ain4-G2",
+    "EEG din1-G2"
+   ],
+   "line_noise_ratio": 0.08202978735186223,
+   "measured_band_limit_hz": 484.075,
+   "nyquist_hz": 512.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  },
+  {
+   "recording": "sub-pt2/ses-extraoperative/ieeg/sub-pt2_ses-extraoperative_task-interictalasleep_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds003876/sub-pt2/ses-)",
+   "sfreq": 1000.0,
+   "n_ieeg_channels": 86,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "POL $G11",
+    "POL $G12",
+    "POL DC01",
+    "POL DC09",
+    "POL DC12"
+   ],
+   "bids_bad_channels": [
+    "POL $G11",
+    "POL $G12",
+    "POL ALEX1",
+    "POL ALEX2",
+    "POL ALEX4",
+    "POL ALEX5",
+    "POL ALEX6",
+    "POL ALEX7",
+    "POL ALEX8",
+    "POL DC01",
+    "POL DC09",
+    "POL DC10",
+    "POL DC11",
+    "POL DC12",
+    "POL E",
+    "POL EKG1",
+    "POL EKG2",
+    "POL G17",
+    "POL G25",
+    "POL G5",
+    "POL G6",
+    "POL LAEX3",
+    "POL RQ1",
+    "POL RQ2"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": 2.429660519423127,
+   "measured_band_limit_hz": 490.0,
+   "nyquist_hz": 500.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  }
+ ]
+}

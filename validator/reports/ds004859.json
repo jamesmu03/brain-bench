@@ -1,0 +1,371 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:21:49+00:00"
+ },
+ "dataset": {
+  "id": "ds004859",
+  "name": "iEEG on children during Stroop task",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004859.v1.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.7.0",
+  "species": "unknown",
+  "n_subjects": 7,
+  "n_recordings_listed": 9,
+  "n_recordings_read": 9,
+  "sampled": false,
+  "n_data_files": 9,
+  "data_formats": [
+   ".edf"
+  ],
+  "total_size_gb": 2.44,
+  "sampling_rates_hz": {
+   "1000": 9
+  },
+  "hours_declared": null,
+  "electrode_types": {
+   "ECOG": 1132
+  },
+  "manufacturers": {
+   "n/a": 9
+  }
+ },
+ "score": 0.712,
+ "grade": "C",
+ "categories": {
+  "identity": 0.889,
+  "acquisition": 0.5,
+  "channels": 1.0,
+  "localization": 0.714,
+  "subjects": 0.6,
+  "labels": 0.25
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds004859.v1.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "README 0 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "EthicsApprovals present"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "9 iEEG data files (.edf)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 9 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 9 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 9 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 9 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 9 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "iEEGReference given in 0% of 9 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "RecordingDuration given in 0% of 9 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 1000 Hz \u00d79"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 9 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 9 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "0 scalp/EKG channels typed as iEEG (of 1132 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 9 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 9 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 9"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 7 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 7 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "electrodes.tsv without coordsystem.json"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 960 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'handedness', 'participant_id', 'sex']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": false,
+   "detail": "events.tsv (non-empty) for 0% of 9 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": null,
+   "detail": "no event labels"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": true,
+   "detail": "TaskDescription for 100% of 9 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-001/ses-01/ieeg/sub-001_ses-01_task-stroop_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds004859/sub-001/ses-)",
+   "sfreq": 1000.0,
+   "n_ieeg_channels": 108,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [],
+   "bids_bad_channels": [
+    "A10",
+    "A15",
+    "A16",
+    "A20",
+    "A21",
+    "A25",
+    "A36",
+    "A37",
+    "A40",
+    "A47",
+    "A48",
+    "A54",
+    "A55",
+    "A56",
+    "A8",
+    "A9",
+    "B12",
+    "B13",
+    "B14",
+    "B15",
+    "B19",
+    "B20",
+    "B21",
+    "B22",
+    "B23",
+    "B27",
+    "B28",
+    "B29",
+    "B30",
+    "B31",
+    "B37",
+    "B4",
+    "B48",
+    "B49",
+    "B5",
+    "B50",
+    "B6",
+    "B7"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": 18.803493356968332,
+   "measured_band_limit_hz": 500.0,
+   "nyquist_hz": 500.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  },
+  {
+   "recording": "sub-006/ses-01/ieeg/sub-006_ses-01_task-stroop_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds004859/sub-006/ses-)",
+   "sfreq": 1000.0,
+   "n_ieeg_channels": 102,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [],
+   "bids_bad_channels": [
+    "A1",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "A16",
+    "A19",
+    "A2",
+    "A20",
+    "A21",
+    "A22",
+    "A23",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "B46"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": 8.006609360292163,
+   "measured_band_limit_hz": 500.0,
+   "nyquist_hz": 500.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  }
+ ]
+}

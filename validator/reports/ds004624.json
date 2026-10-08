@@ -1,0 +1,270 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:18:23+00:00"
+ },
+ "dataset": {
+  "id": "ds004624",
+  "name": "Intracranial recordings using BCI2000 and the CorTec BrainInterchange",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004624.v2.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "Brain Imaging Data Structure Specification v1.8.0",
+  "species": "human",
+  "n_subjects": 3,
+  "n_recordings_listed": 614,
+  "n_recordings_read": 400,
+  "sampled": true,
+  "n_data_files": 0,
+  "data_formats": [],
+  "total_size_gb": 20.74,
+  "sampling_rates_hz": {
+   "1000.0": 400
+  },
+  "hours_declared": null,
+  "electrode_types": {},
+  "manufacturers": {
+   "None": 400
+  }
+ },
+ "score": 0.455,
+ "grade": "F",
+ "categories": {
+  "identity": 0.667,
+  "acquisition": 0.429,
+  "channels": 0.0,
+  "localization": 0.778,
+  "subjects": 0.2,
+  "labels": 0.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds004624.v2.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "no citation guidance"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 348 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "EthicsApprovals present"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": false,
+   "detail": "no iEEG data files found"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 400 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 400 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 400 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "hardware filters stated for 0% of 400 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 400 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "iEEGReference given in 100% of 400 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "RecordingDuration given in 0% of 400 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 1000.0 Hz \u00d7400"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": false,
+   "detail": "channels.tsv for 0% of 400 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 2 subjects (sampled)"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "coordinate systems: ACPC \u00d72"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "template (MNI-type) coordinates not available; spaces: ['ACPC']"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 96 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "participants.tsv columns: ['participant_id', 'sex']; age/sex filled: ['sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": false,
+   "detail": "events.tsv (non-empty) for 59% of 398 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": null,
+   "detail": "no event labels"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": false,
+   "detail": "TaskDescription for 0% of 400 task recordings"
+  }
+ ],
+ "signal": []
+}

@@ -1,0 +1,337 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:15:28+00:00"
+ },
+ "dataset": {
+  "id": "ds003844",
+  "name": "Dataset Clinical Epilepsy iEEG to BIDS -RESPect_intraoperative_iEEG",
+  "license": "CC0",
+  "doi": "10.18112/openneuro.ds003844.v1.0.1",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "BEP010",
+  "species": "human",
+  "n_subjects": 6,
+  "n_recordings_listed": 38,
+  "n_recordings_read": 38,
+  "sampled": false,
+  "n_data_files": 38,
+  "data_formats": [
+   ".vhdr"
+  ],
+  "total_size_gb": 2.8,
+  "sampling_rates_hz": {
+   "2048": 33,
+   "256": 5
+  },
+  "hours_declared": 2.8,
+  "electrode_types": {
+   "ECOG": 776
+  },
+  "manufacturers": {
+   "Micromed": 38
+  }
+ },
+ "score": 0.87,
+ "grade": "B",
+ "categories": {
+  "identity": 0.889,
+  "acquisition": 1.0,
+  "channels": 1.0,
+  "localization": 0.556,
+  "subjects": 0.6,
+  "labels": 1.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: 10.18112/openneuro.ds003844.v1.0.1"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 4915 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "EthicsApprovals missing"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "38 iEEG data files (.vhdr)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "Manufacturer given in 100% of 38 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "ManufacturersModelName given in 100% of 38 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 38 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 38 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 38 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "iEEGReference given in 100% of 38 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 38 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 2048 Hz \u00d733, 256 Hz \u00d75"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 38 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 38 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "0 scalp/EKG channels typed as iEEG (of 776 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 38 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 38 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 38"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 6 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 6 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "coordinate systems: Other \u00d738"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "template (MNI-type) coordinates not available; spaces: ['OTHER']"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 1528 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'participant_id', 'session', 'sex']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": true,
+   "detail": "events.tsv (non-empty) for 100% of 38 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "3 distinct labels; top: ['artefact', 'good data segment', 'odd behavior']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": true,
+   "detail": "TaskDescription for 100% of 38 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-RESP0059/ses-SITUATION1A/ieeg/sub-RESP0059_ses-SITUATION1A_task-acute_ieeg.vhdr",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds003844/sub-RESP0059)",
+   "sfreq": 2048.0002097152214,
+   "n_ieeg_channels": 26,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "Gr16",
+    "Gr17",
+    "Gr18",
+    "Gr19",
+    "Gr20"
+   ],
+   "bids_bad_channels": [
+    "Gr20"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "Gr16",
+    "Gr17",
+    "Gr18",
+    "Gr19"
+   ],
+   "line_noise_ratio": 35.942311500020814,
+   "measured_band_limit_hz": 749.9917434658213,
+   "nyquist_hz": 1024.0001048576107,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": {
+    "HighpassFilter": {
+     "CutoffFrequency": 0.15
+    },
+    "LowpassFilter": {
+     "CutoffFrequency": 538
+    }
+   }
+  },
+  {
+   "recording": "sub-RESP0384/ses-SITUATION1A/ieeg/sub-RESP0384_ses-SITUATION1A_task-acute_ieeg.vhdr",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds003844/sub-RESP0384)",
+   "sfreq": 2048.0002097152214,
+   "n_ieeg_channels": 20,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": 89.55654589371309,
+   "measured_band_limit_hz": 450.10004609024475,
+   "nyquist_hz": 1024.0001048576107,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": {
+    "HighpassFilter": {
+     "CutoffFrequency": 0.15
+    },
+    "LowpassFilter": {
+     "CutoffFrequency": 468
+    }
+   }
+  }
+ ]
+}

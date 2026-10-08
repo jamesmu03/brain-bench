@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trust report · 000055</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#163f78;--navy-dark:#0b1f3f;--ink:#0f1724;--ink-2:#2b3443;--muted:#6f7681;--faint:#9aa0a9;--line:#e8e4db;--cream:#f8f6f1;--cream-2:#f2efe8;--paper:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:15.5px/1.6 Inter,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:900px;margin:0 auto;padding:40px 24px 64px}
+.top{display:flex;justify-content:space-between;align-items:baseline;color:var(--muted);font-size:13px;margin-bottom:28px}
+.top b{color:var(--ink);font-weight:600;letter-spacing:.02em}
+h1{font-weight:400;font-size:34px;letter-spacing:-.025em;line-height:1.15;margin:0 0 6px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 28px}
+.meta a{color:var(--navy)}
+.verdict{background:var(--navy-dark);color:#fff;border-radius:16px;padding:26px 28px;margin-bottom:22px}
+.verdict .label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.verdict h2{font-weight:400;font-size:26px;letter-spacing:-.02em;margin:6px 0 10px}
+.verdict p{margin:0;color:rgba(255,255,255,.8)}
+.grades{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 30px}
+.g{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.g b{display:block;font-weight:400;font-size:30px;letter-spacing:-.02em;color:var(--navy);line-height:1}
+.g span{display:block;margin-top:6px;font-size:13px;color:var(--muted)}
+h3{font-weight:500;font-size:20px;letter-spacing:-.01em;margin:34px 0 12px}
+.risk{background:var(--paper);border:1px solid var(--line);border-left:4px solid #e0a43a;border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.risk.conflict{border-left-color:#c2410c}
+.risk b{font-weight:600}
+.risk p{margin:4px 0 0;color:var(--ink-2);font-size:14.5px}
+.q{color:var(--muted);font-size:13.5px;margin-top:6px}
+ul.ok{margin:0;padding-left:18px;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13.5px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:500;padding:10px 12px;border-bottom:1px solid var(--line)}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.s-attested{background:#163f78;color:#fff}.s-inferred{background:#d9e4f4;color:#11305c}.s-conflict{background:#fff4dc;color:#7a4b00}.s-missing{background:#fde8e8;color:#8a1c1c}
+.small{color:var(--muted);font-size:13px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+@media print{body{background:#fff}.verdict{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media (max-width:700px){.grades{grid-template-columns:1fr}}
+</style></head><body><div class=page>
+<div class=top><b>brain-bench · TRUST REPORT</b><span>6 October 2026</span></div>
+<h1>AJILE12: Long-term naturalistic human intracranial neural recordings and pose</h1>
+<p class=meta>dandi 000055 · version 0.220127.0436 · NWB · 12 subjects · <a href="https://dandiarchive.org/dandiset/000055/0.220127.0436">archive page</a></p>
+
+<div class=verdict><div class=label>Verdict</div><h2>Not ready to combine with other data</h2><p>1 required field is missing; 3 only stated in the paper; 1 disagrees with the paper.</p></div>
+<div class=grades>
+<div class=g><b>F</b><span>The data as deposited (0.46)</span></div>
+<div class=g><b>D</b><span>Counting what the paper adds, unconfirmed (0.62)</span></div>
+<div class=g><b>C</b><span>If the authors confirmed it (0.79)</span></div>
+</div>
+
+<h3>What to watch for</h3>
+<div class='risk conflict'><b>Filter settings: the data and the paper disagree.</b><p>The files say 250 Hz lowpass; the paper says: Shared ECoG: median DC removal, 1–200 Hz band-pass, 60 Hz and harmonics notch, downsampled to 500 Hz. You can't tell which frequencies are real signal and which were removed, so spectral features may not be comparable across sites.</p><div class=q>“With data discontinuities removed, we then band-pass ﬁltered the data (1–200 Hz), notch ﬁltered to minimize line noise at 60 Hz and its harmonics, downsampled to 500 Hz, and re-referenced to the common median for each grid, strip, or depth electrode group.” · 10.1101/2021.07.26.453884</div></div><div class=risk><b>Recording system / amplifier: missing.</b><p>Neither the data nor an open-access paper states it. You can't correct for hardware differences when combining this with data from other hospitals.</p></div><div class=risk><b>Consent scope: missing.</b><p>Neither the data nor an open-access paper states it. It's unclear whether reuse, especially commercial reuse, is covered by what patients agreed to.</p></div><div class=risk><b>Reference scheme: only in the paper.</b><p>The paper says: Shared data re-referenced to the common median of each grid, strip, or depth electrode group. The data doesn't state it, so treat this as unconfirmed. The same activity looks different under different references, so signals may not be comparable to other datasets.</p><div class=q>“With data discontinuities removed, we then band-pass ﬁltered the data (1–200 Hz), notch ﬁltered to minimize line noise at 60 Hz and its harmonics, downsampled to 500 Hz, and re-referenced to the common median for each grid, strip, or depth electrode group.” · 10.1101/2021.07.26.453884</div></div><div class=risk><b>Electrode localization method: only in the paper.</b><p>The paper says: Fieldtrip; preop MRI coregistered with postop CT, manual electrode selection, warped to MNI space. The data doesn't state it, so treat this as unconfirmed. You can't place contacts reliably in a shared brain space, so cross-patient analysis is limited.</p><div class=q>“This process in- volved coregistering preoperative MRI and postoperative computed tomography scans, manually selecting electro- des in 3D space, and warping electrode positions into Montreal Neurological Institute (MNI) space.” · 10.1523/eneuro.0007-21.2021</div></div><div class=risk><b>Subjects by diagnosis: only in the paper.</b><p>The paper says: 12 subjects (8 male, 4 female) undergoing clinical epilepsy monitoring. The data doesn't state it, so treat this as unconfirmed. You can't tell which patient population a model would be learning from.</p><div class=q>“We analyzed opportunistic clinical recordings from 12 subjects (8 males, 4 females) during their clinical epilepsy monitoring.” · 10.1523/eneuro.0007-21.2021</div></div><div class=risk><b>Task design: only in the paper.</b><p>The paper says: naturalistic, unstructured everyday activities during clinical monitoring (eating, sleeping, watching TV, socializing). The data doesn't state it, so treat this as unconfirmed. Labels are hard to interpret without knowing what patients were doing.</p><div class=q>“During clinical monitoring, subjects were ob- served during a variety of typical everyday activities, such as eating, sleeping, watching television, and social- izing while confined to a hospital bed.” · 10.1523/eneuro.0007-21.2021</div></div>
+
+<h3>What the data states</h3>
+<ul class=ok><li>Sampling rate</li><li>Electrode types and counts</li><li>Event annotations</li><li>Ethics approval</li><li>License</li><li>Linked publication DOI</li></ul>
+
+<h3>All fields</h3>
+<table><thead><tr><th>Field</th><th>Status</th><th>In the data</th><th>In the paper</th></tr></thead><tbody><tr><td>Sampling rate<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>500 Hz</td><td>1000 Hz (ECoG as acquired); resampled to 500 Hz in processing</td></tr><tr><td>Filter settings<div class=small>required</div></td><td><span class='pill s-conflict'>Conflict</span></td><td>250 Hz lowpass</td><td>Shared ECoG: median DC removal, 1–200 Hz band-pass, 60 Hz and harmonics notch, downsampled to 500 Hz</td></tr><tr><td>Recording system / amplifier<div class=small>required</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td><span class=small>—</span></td></tr><tr><td>Electrode types and counts<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>grid, depth, unspecified</td><td>subdural ECoG grids (8x8 or two 4x8) plus additional surface electrodes, 87.0±12.9 surface electrodes per subject; 5 subjects had 23.2±12.1…</td></tr><tr><td>Reference scheme<div class=small>required</div></td><td><span class='pill s-inferred'>From the paper</span></td><td><span class=small>—</span></td><td>Shared data re-referenced to the common median of each grid, strip, or depth electrode group</td></tr><tr><td>Electrode localization method<div class=small>required</div></td><td><span class='pill s-inferred'>From the paper</span></td><td>coordinates given, coordinate space not stated</td><td>Fieldtrip; preop MRI coregistered with postop CT, manual electrode selection, warped to MNI space</td></tr><tr><td>Subjects by diagnosis<div class=small>required</div></td><td><span class='pill s-inferred'>From the paper</span></td><td>n_subjects</td><td>12 subjects (8 male, 4 female) undergoing clinical epilepsy monitoring</td></tr><tr><td>License<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>spdx:CC-BY-4.0</td><td>publicly available without restriction other than citation (Figshare); no named license</td></tr><tr><td>Task design<div class=small>recommended</div></td><td><span class='pill s-inferred'>From the paper</span></td><td><span class=small>—</span></td><td>naturalistic, unstructured everyday activities during clinical monitoring (eating, sleeping, watching TV, socializing)</td></tr><tr><td>Event annotations<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>tables: epochs, reaches</td><td>yes; contralateral wrist movement events with features, and coarse behavioral labels (activities and blocklist) with start/stop times</td></tr><tr><td>Consent scope<div class=small>recommended</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td>written informed consent; scope not specified</td></tr><tr><td>Ethics approval<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>STUDY00000623</td><td>University of Washington Institutional Review Board</td></tr><tr><td>Linked publication DOI<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>dataset_doi: 10.48324/dandi.000055/0.220127.0436; publication_dois: 10.1523/eneuro.0007-21.2021, 10.1016/j.jneumeth.2021.109199…</td><td>DANDI:000055 (https://identifiers.org/DANDI:000055)</td></tr><tr><td>Medication status<div class=small>optional</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td><span class=small>—</span></td></tr><tr><td>De-identification method<div class=small>optional</div></td><td><span class='pill s-inferred'>From the paper</span></td><td><span class=small>—</span></td><td>All recording dates stripped</td></tr></tbody></table>
+
+<h3>How we checked</h3>
+<p class=small>We read the dataset's descriptive files (sidecars, channel and electrode tables, NWB headers) without downloading the recordings, and the open-access paper(s) describing it (10.1523/eneuro.0007-21.2021, 10.1101/2021.07.26.453884). Values from a paper are only used when backed by a sentence quoted word for word from it, and they stay labelled as unconfirmed. We check that information is present and consistent; we don't judge the science. Paywalled papers are not read.</p>
+
+<footer>brain-bench grades are independent: whoever pays for a report has no say in its result. This report refers to the dataset version above.</footer>
+</div></body></html>

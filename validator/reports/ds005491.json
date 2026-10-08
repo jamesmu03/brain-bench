@@ -1,0 +1,339 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:26:02+00:00"
+ },
+ "dataset": {
+  "id": "ds005491",
+  "name": "Categorized Free Recall with Open-Loop Stimulation at Encoding",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005491.v1.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.7.0",
+  "species": "human",
+  "n_subjects": 19,
+  "n_recordings_listed": 51,
+  "n_recordings_read": 51,
+  "sampled": false,
+  "n_data_files": 51,
+  "data_formats": [
+   ".edf"
+  ],
+  "total_size_gb": 24.2,
+  "sampling_rates_hz": {
+   "500.0": 39,
+   "1600.0": 6,
+   "999.0": 4,
+   "1000.0": 2
+  },
+  "hours_declared": 46.7,
+  "electrode_types": {
+   "ECOG": 3638,
+   "SEEG": 1640
+  },
+  "manufacturers": {
+   "n/a": 51
+  }
+ },
+ "score": 0.759,
+ "grade": "C",
+ "categories": {
+  "identity": 0.778,
+  "acquisition": 0.5,
+  "channels": 0.846,
+  "localization": 1.0,
+  "subjects": 0.6,
+  "labels": 1.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds005491.v1.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "no citation guidance"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 3142 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "EthicsApprovals missing"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "51 iEEG data files (.edf)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 51 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 51 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 51 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "hardware filters stated for 0% of 51 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 51 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "iEEGReference given in 100% of 51 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 51 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 500.0 Hz \u00d739, 1600.0 Hz \u00d76, 999.0 Hz \u00d74, 1000.0 Hz \u00d72"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 51 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 51 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "0 scalp/EKG channels typed as iEEG (of 5278 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": false,
+   "detail": "status column in 0% of 51 channel tables; no channel ever marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 51 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 51"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "18 of 19 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 19 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "coordinate systems: MNI152NLin6ASym \u00d723, Talairach \u00d73"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "template (MNI-type) coordinates available"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 2452 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'hand', 'participant_id', 'sex']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": true,
+   "detail": "events.tsv (non-empty) for 100% of 51 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "23 distinct labels; top: ['WORD', 'REC_WORD', 'PROB', 'STIM_ON', 'COUNTDOWN_START', 'COUNTDOWN_END']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": true,
+   "detail": "TaskDescription for 100% of 51 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-R1028M/ses-0/ieeg/sub-R1028M_ses-0_task-catFR2_acq-bipolar_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds005491/sub-R1028M/s)",
+   "sfreq": 500.0,
+   "n_ieeg_channels": 72,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "RTG1-RTG10",
+    "RTG1-RTG2",
+    "RTG1-RTG9",
+    "RTG15-RTG16",
+    "RTG2-RTG10",
+    "RTG2-RTG3",
+    "RTG3-RTG11",
+    "RTG3-RTG4",
+    "RTG4-RTG5",
+    "RTG5-RTG13",
+    "RTG5-RTG6",
+    "RTG8-RTG16"
+   ],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "RTG1-RTG10",
+    "RTG1-RTG2",
+    "RTG1-RTG9",
+    "RTG15-RTG16",
+    "RTG2-RTG10",
+    "RTG2-RTG3",
+    "RTG3-RTG11",
+    "RTG3-RTG4",
+    "RTG4-RTG5",
+    "RTG5-RTG13",
+    "RTG5-RTG6",
+    "RTG8-RTG16"
+   ],
+   "line_noise_ratio": 25.680772820298852,
+   "measured_band_limit_hz": 192.75833333333333,
+   "nyquist_hz": 250.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": "n/a"
+  },
+  {
+   "recording": "sub-R1042M/ses-0/ieeg/sub-R1042M_ses-0_task-catFR2_acq-monopolar_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds005491/sub-R1042M/s)",
+   "sfreq": 500.0,
+   "n_ieeg_channels": 80,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": 342.7554212547688,
+   "measured_band_limit_hz": 246.71666666666667,
+   "nyquist_hz": 250.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": "n/a"
+  }
+ ]
+}

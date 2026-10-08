@@ -1,0 +1,335 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:17:12+00:00"
+ },
+ "dataset": {
+  "id": "000055",
+  "name": "AJILE12: Long-term naturalistic human intracranial neural recordings and pose",
+  "license": "spdx:CC-BY-4.0",
+  "doi": "10.48324/dandi.000055/0.220127.0436",
+  "archive": "dandi",
+  "version": "0.220127.0436",
+  "bids_version": null,
+  "species": "human",
+  "n_subjects": 12,
+  "n_recordings_listed": 55,
+  "n_recordings_read": 6,
+  "sampled": true,
+  "n_data_files": 55,
+  "data_formats": [
+   ".nwb"
+  ],
+  "total_size_gb": 845.87,
+  "sampling_rates_hz": {
+   "500.0": 6
+  },
+  "hours_declared": 127.4,
+  "electrode_types": {
+   "ECOG": 373,
+   "SEEG": 229
+  },
+  "manufacturers": {
+   "n/a": 6
+  }
+ },
+ "score": 0.679,
+ "grade": "C",
+ "categories": {
+  "identity": 1.0,
+  "acquisition": 0.429,
+  "channels": 1.0,
+  "localization": 0.556,
+  "subjects": 0.0,
+  "labels": 0.75
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: spdx:CC-BY-4.0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: 10.48324/dandi.000055/0.220127.0436"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 1377 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "EthicsApprovals present"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "55 iEEG data files (.nwb)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 6 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 6 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "PowerLineFrequency given in 0% of 6 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 6 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 6 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "iEEGReference given in 0% of 6 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 6 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 500.0 Hz \u00d76"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 6 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 6 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "0 scalp/EKG channels typed as iEEG (of 602 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 6 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 6 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 6"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 6 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 6 subjects (sampled)"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "coordinate systems: missing \u00d76"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "template (MNI-type) coordinates not available; spaces: ['MISSING']"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "99% of 602 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "participants.tsv columns: ['age', 'description', 'participant_id', 'sex', 'species']; age/sex filled: []"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": null,
+   "detail": "not applicable"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": true,
+   "detail": "events.tsv (non-empty) for 100% of 6 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "22 distinct labels; top: ['Blocklist (Data break)', 'Sleep/rest', 'TV', 'Talk', 'Computer/phone', 'Blocklist (Experiment)']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": false,
+   "detail": "TaskDescription for 0% of 6 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-01/sub-01_ses-7_behavior+ecephys.nwb",
+   "reader": "h5py over HTTP",
+   "sfreq": 500.0,
+   "n_ieeg_channels": 94,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [],
+   "bids_bad_channels": [
+    "GRID1",
+    "GRID37",
+    "LID2"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": null,
+   "measured_band_limit_hz": 57.55833333333333,
+   "nyquist_hz": 250.0,
+   "declared_software_filters": null,
+   "declared_hardware_filters": {
+    "from": "electrodes.filtering",
+    "example": "250 Hz lowpass"
+   }
+  },
+  {
+   "recording": "sub-12/sub-12_ses-4_behavior+ecephys.nwb",
+   "reader": "h5py over HTTP",
+   "sfreq": 500.0,
+   "n_ieeg_channels": 124,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "AID2",
+    "AID3",
+    "AID4",
+    "AID5"
+   ],
+   "bids_bad_channels": [
+    "AID1",
+    "AID2",
+    "AID3",
+    "AID4",
+    "AID5",
+    "AID6",
+    "AID7",
+    "AID8",
+    "GRID1"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": null,
+   "measured_band_limit_hz": 200.65,
+   "nyquist_hz": 250.0,
+   "declared_software_filters": null,
+   "declared_hardware_filters": {
+    "from": "electrodes.filtering",
+    "example": "250 Hz lowpass"
+   }
+  }
+ ]
+}

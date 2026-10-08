@@ -1,0 +1,375 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:16:18+00:00"
+ },
+ "dataset": {
+  "id": "ds004100",
+  "name": "HUP iEEG Epilepsy Dataset",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004100.v1.1.3",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.4.0",
+  "species": "human",
+  "n_subjects": 58,
+  "n_recordings_listed": 326,
+  "n_recordings_read": 326,
+  "sampled": false,
+  "n_data_files": 326,
+  "data_formats": [
+   ".edf"
+  ],
+  "total_size_gb": 19.88,
+  "sampling_rates_hz": {
+   "512.0": 165,
+   "1024.0": 76,
+   "500.0": 69,
+   "256.0": 16
+  },
+  "hours_declared": 50.1,
+  "electrode_types": {
+   "SEEG": 28011,
+   "ECOG": 11231
+  },
+  "manufacturers": {
+   "n/a": 326
+  }
+ },
+ "score": 0.796,
+ "grade": "C",
+ "categories": {
+  "identity": 0.778,
+  "acquisition": 0.571,
+  "channels": 0.846,
+  "localization": 1.0,
+  "subjects": 1.0,
+  "labels": 0.75
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds004100.v1.1.3"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "no citation guidance"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 2373 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "EthicsApprovals missing"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "326 iEEG data files (.edf)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 326 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 326 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 326 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 326 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 326 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "iEEGReference given in 0% of 326 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 326 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 512.0 Hz \u00d7165, 1024.0 Hz \u00d776, 500.0 Hz \u00d769, 256.0 Hz \u00d716"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 326 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 326 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": false,
+   "detail": "1195 scalp/EKG channels typed as iEEG (of 39242 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 326 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 326 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 326"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 58 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 58 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "coordinate systems: fsaverage \u00d758"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "template (MNI-type) coordinates available"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "95% of 7049 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'age_onset', 'engel', 'hand', 'implant', 'lesion_status', 'outcome', 'participant_id', 'sex', 'target', 'therapy']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "clinical/implant columns: ['engel', 'implant', 'outcome', 'target']"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": true,
+   "detail": "events.tsv (non-empty) for 100% of 213 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "2 distinct labels; top: ['sz onset', 'sz offset']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": false,
+   "detail": "TaskDescription for 0% of 326 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-HUP060/ses-presurgery/ieeg/sub-HUP060_ses-presurgery_task-ictal_acq-seeg_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds004100/sub-HUP060/s)",
+   "sfreq": 500.0,
+   "n_ieeg_channels": 59,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [],
+   "bids_bad_channels": [
+    "C3",
+    "C4",
+    "CZ",
+    "EKG1",
+    "EKG2",
+    "F3",
+    "F4",
+    "F7",
+    "F8",
+    "FP1",
+    "FP2",
+    "FZ",
+    "O1",
+    "O2",
+    "P3",
+    "P4",
+    "PZ",
+    "RA1",
+    "RA4",
+    "T3",
+    "T4",
+    "T5",
+    "T6"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": 4317.909903410052,
+   "measured_band_limit_hz": 240.06666666666666,
+   "nyquist_hz": 250.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  },
+  {
+   "recording": "sub-HUP138/ses-presurgery/ieeg/sub-HUP138_ses-presurgery_task-ictal_acq-seeg_run-05_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds004100/sub-HUP138/s)",
+   "sfreq": 1024.0,
+   "n_ieeg_channels": 122,
+   "seconds_measured": 120.0,
+   "flat_channels": [
+    "C3",
+    "C4",
+    "F3",
+    "F4",
+    "F7",
+    "F8",
+    "FZ",
+    "LF04",
+    "RF04"
+   ],
+   "variance_outliers": [
+    "LF03",
+    "RF12"
+   ],
+   "bids_bad_channels": [
+    "C3",
+    "C4",
+    "CZ",
+    "EKG1",
+    "EKG2",
+    "F3",
+    "F4",
+    "F7",
+    "F8",
+    "FZ",
+    "LF04",
+    "RB07",
+    "RC03",
+    "RC05",
+    "RE07",
+    "RF01",
+    "RF03",
+    "RF11",
+    "RF12",
+    "RG03"
+   ],
+   "unmarked_flat": [
+    "RF04"
+   ],
+   "unmarked_outliers": [
+    "LF03"
+   ],
+   "line_noise_ratio": 48.900781176533044,
+   "measured_band_limit_hz": 512.0,
+   "nyquist_hz": 512.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  }
+ ]
+}

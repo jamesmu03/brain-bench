@@ -1,0 +1,281 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:38:07+00:00"
+ },
+ "dataset": {
+  "id": "ds005691",
+  "name": "SpinalExpect_Invasive",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005691.v1.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.6",
+  "species": "human",
+  "n_subjects": 8,
+  "n_recordings_listed": 8,
+  "n_recordings_read": 8,
+  "sampled": false,
+  "n_data_files": 8,
+  "data_formats": [
+   ".vhdr"
+  ],
+  "total_size_gb": 0.76,
+  "sampling_rates_hz": {
+   "2500": 8
+  },
+  "hours_declared": 5.9,
+  "electrode_types": {},
+  "manufacturers": {
+   "Brain Products GmbH": 8
+  }
+ },
+ "score": 0.763,
+ "grade": "C",
+ "categories": {
+  "identity": 1.0,
+  "acquisition": 1.0,
+  "channels": 0.0,
+  "localization": 0.0,
+  "subjects": 0.4,
+  "labels": 1.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds005691.v1.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 2031 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "EthicsApprovals present"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "8 iEEG data files (.vhdr)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "Manufacturer given in 100% of 8 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "ManufacturersModelName given in 100% of 8 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 8 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 8 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 8 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "iEEGReference given in 100% of 8 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 8 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 2500 Hz \u00d78"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": false,
+   "detail": "channels.tsv for 0% of 8 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": null,
+   "detail": "no channel tables"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": false,
+   "detail": "electrode positions for 0% of 8 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no electrodes.tsv"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'participant_id', 'sex']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": false,
+   "detail": "participants.json missing"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": true,
+   "detail": "events.tsv (non-empty) for 100% of 8 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "5 distinct labels; top: ['S130', 'S 70', 'S 99', 'S  1', '1']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": true,
+   "detail": "TaskDescription for 100% of 8 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-01/ieeg/sub-01_task-countingDeviants_ieeg.vhdr",
+   "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 67: invalid start byte"
+  },
+  {
+   "recording": "sub-06/ieeg/sub-06_task-countingDeviants_ieeg.vhdr",
+   "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 67: invalid start byte"
+  }
+ ]
+}

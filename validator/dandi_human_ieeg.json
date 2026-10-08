@@ -1,0 +1,262 @@
+[
+ {
+  "id": "000019",
+  "version": "0.220126.2148",
+  "name": "Human ECoG speaking consonant-vowel syllables",
+  "species": [
+   "Human"
+  ],
+  "approach": [
+   "electrophysiological approach"
+  ],
+  "variables": [
+   "ElectrodeGroup",
+   "ElectricalSeries",
+   "ProcessingModule",
+   "Spectrum"
+  ],
+  "n_subjects": 4,
+  "n_bytes": 55585858956,
+  "n_files": 31,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.000019/0.220126.2148",
+  "description": "The enclosed data is collected using a high-density 256-channel electrocorticography (ECoG) array implanted in human patients during treatment for epilepsy. The subjects are reading aloud consonant-vowel syllables from a list. The data was collected by Dr. Edward Chang and Dr. Kristofer Bouchard at "
+ },
+ {
+  "id": "000055",
+  "version": "0.220127.0436",
+  "name": "AJILE12: Long-term naturalistic human intracranial neural recordings and pose",
+  "species": [
+   "Human"
+  ],
+  "approach": [
+   "behavioral approach",
+   "electrophysiological approach"
+  ],
+  "variables": [
+   "Position",
+   "ProcessingModule",
+   "ElectricalSeries",
+   "ElectrodeGroup"
+  ],
+  "n_subjects": 12,
+  "n_bytes": 845869698341,
+  "n_files": 55,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.000055/0.220127.0436",
+  "description": "Understanding the neural basis of human movement in naturalistic scenarios is critical for expanding neuroscience research beyond constrained laboratory paradigms. The neural correlates of unstructured, spontaneous movements in completely naturalistic settings have rarely been studied, due in large "
+ },
+ {
+  "id": "000574",
+  "version": "0.250815.1108",
+  "name": "Dataset of human medial temporal lobe neurons, scalp and intracranial EEG during a verbal working memory task",
+  "species": [
+   "Homo sapiens - Human"
+  ],
+  "approach": [
+   "electrophysiological approach"
+  ],
+  "variables": [
+   "ElectricalSeries",
+   "ElectrodeGroup",
+   "Units"
+  ],
+  "n_subjects": 9,
+  "n_bytes": 107315450285,
+  "n_files": 37,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.000574/0.250815.1108",
+  "description": "We present an electrophysiological dataset recorded from nine subjects during a verbal working memory task. Subjects were epilepsy patients undergoing intracranial monitoring for localization of epileptic seizures. Subjects performed a modified Sternberg task in which the encoding of memory items, m"
+ },
+ {
+  "id": "000575",
+  "version": "0.231010.1811",
+  "name": "Dataset of human medial temporal lobe neurons during a visual working memory task",
+  "species": [
+   "Homo sapiens - Human"
+  ],
+  "approach": [
+   "electrophysiological approach",
+   "behavioral approach"
+  ],
+  "variables": [
+   "Units",
+   "BehavioralEvents",
+   "ElectrodeGroup",
+   "ProcessingModule",
+   "LFP",
+   "ElectricalSeries"
+  ],
+  "n_subjects": 13,
+  "n_bytes": 50794717628,
+  "n_files": 18,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.000575/0.231010.1811",
+  "description": "We present an electrophysiological dataset recorded from thirteen subjects during a visual working memory task. Subjects were epilepsy patients undergoing intracranial monitoring for localization of epileptic seizures. Here, we recorded single neuron firing in 13 epilepsy patients (7 male) while the"
+ },
+ {
+  "id": "000576",
+  "version": "0.231010.1811",
+  "name": "Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation",
+  "species": [
+   "Homo sapiens - Human"
+  ],
+  "approach": [
+   "electrophysiological approach"
+  ],
+  "variables": [
+   "ProcessingModule",
+   "LFP",
+   "Units",
+   "ElectricalSeries",
+   "ElectrodeGroup"
+  ],
+  "n_subjects": 9,
+  "n_bytes": 2191651090,
+  "n_files": 27,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.000576/0.231010.1811",
+  "description": "We present an electrophysiological dataset collected from the amygdalae of nine subjects attending a visual dynamic stimulation of emotional aversive content. The subjects were patients affected by epilepsy who underwent preoperative invasive monitoring in the mesial temporal lobe. Subjects were pre"
+ },
+ {
+  "id": "000623",
+  "version": "0.240227.2023",
+  "name": "Data for: Multimodal single-neuron, intracranial EEG, and fMRI brain responses during movie watching in human patients",
+  "species": [
+   "Homo sapiens - Human"
+  ],
+  "approach": [
+   "electrophysiological approach",
+   "behavioral approach"
+  ],
+  "variables": [
+   "ElectricalSeries",
+   "LFP",
+   "EyeTracking",
+   "ElectrodeGroup",
+   "BehavioralTimeSeries",
+   "PupilTracking",
+   "SpatialSeries",
+   "ProcessingModule",
+   "Units"
+  ],
+  "n_subjects": 16,
+  "n_bytes": 27744749325,
+  "n_files": 29,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": null,
+  "description": "We present a multimodal dataset of intracranial recordings, fMRI, and eye tracking in 20 participants during movie watching. Recordings consist of single neurons, local field potential, and intracranial EEG activity acquired from depth electrodes targeting the amygdala, hippocampus, and medial front"
+ },
+ {
+  "id": "000673",
+  "version": "0.250122.0110",
+  "name": "Data for: Control of working memory by phase\u2013amplitude coupling of human hippocampal neurons",
+  "species": [
+   "Homo sapiens - Human"
+  ],
+  "approach": [
+   "electrophysiological approach"
+  ],
+  "variables": [
+   "Units",
+   "ElectricalSeries",
+   "ElectrodeGroup"
+  ],
+  "n_subjects": 36,
+  "n_bytes": 23440983616,
+  "n_files": 44,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.000673/0.250122.0110",
+  "description": "Retaining information in working memory is a demanding process that relies on cognitive control to protect memoranda-specific persistent activity from interference. However, how cognitive control regulates working memory storage is unclear. Here we show that interactions of frontal control and hippo"
+ },
+ {
+  "id": "001193",
+  "version": "0.240921.1006",
+  "name": "Data for: Distinct spatiotemporal patterns of syntactic and semantic processing in human inferior frontal gyrus",
+  "species": [
+   "Homo sapiens - Human"
+  ],
+  "approach": [
+   "electrophysiological approach"
+  ],
+  "variables": [
+   "ElectrodeGroup",
+   "ElectricalSeries"
+  ],
+  "n_subjects": 10,
+  "n_bytes": 1365465792,
+  "n_files": 40,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.001193/0.240921.1006",
+  "description": "This dataset comprises high-gamma brain activity recordings (70-150 Hz) obtained through electrocorticography (ECoG) from human subjects. It focuses on neural responses during syntactic and semantic processing tasks, specifically within the inferior frontal gyrus. The data is formatted in the Neurod"
+ },
+ {
+  "id": "001333",
+  "version": "0.250327.2220",
+  "name": "Parkinson's Electrophysiological Signal Dataset (PESD)",
+  "species": [
+   "Homo sapiens - Human"
+  ],
+  "approach": [
+   "electrophysiological approach"
+  ],
+  "variables": [
+   "ElectricalSeries",
+   "LFP",
+   "ElectrodeGroup",
+   "ProcessingModule"
+  ],
+  "n_subjects": 5,
+  "n_bytes": 28983392,
+  "n_files": 52,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.001333/0.250327.2220",
+  "description": "The dataset contains electrophysiological signals from both healthy and parkinsonian subjects. We generated two types of samples from each group. The parkinsonian signals show a relatively high power density at the beta frequency (13 to 30 Hz). Thus, the beta oscillations (13 to 30 Hz) in the subtha"
+ },
+ {
+  "id": "001347",
+  "version": "0.250528.0702",
+  "name": "Brain-wide human electrophysiology during aversive stimuli and ketamine",
+  "species": [
+   "Homo sapiens - Human",
+   "Mus musculus - House mouse"
+  ],
+  "approach": [
+   "electrophysiological approach",
+   "behavioral approach"
+  ],
+  "variables": [
+   "LFP",
+   "ElectricalSeries",
+   "ProcessingModule",
+   "ElectrodeGroup",
+   "BehavioralTimeSeries"
+  ],
+  "n_subjects": 173,
+  "n_bytes": 16035455232,
+  "n_files": 207,
+  "license": [
+   "spdx:CC-BY-4.0"
+  ],
+  "doi": "10.48324/dandi.001347/0.250528.0702",
+  "description": "Brain-wide human electrophysiology associated with Kauvar*, Richman*, Liu* et al Science (2025). \n\nRegarding data folders, subjects with prefix \"SD\" indicate iEEG human participants, \"h\" indicate non-iEEG eyepuff human participants, and \"m\" indicate mice. Notably, \"H\" and \"mouse\" folders include cro"
+ }
+]

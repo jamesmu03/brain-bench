@@ -1,0 +1,336 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:14:52+00:00"
+ },
+ "dataset": {
+  "id": "ds003498",
+  "name": "interictal iEEG during slow-wave sleep with HFO markings",
+  "license": "CC0",
+  "doi": "10.18112/openneuro.ds003498.v1.0.1",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.4.0",
+  "species": "human",
+  "n_subjects": 20,
+  "n_recordings_listed": 385,
+  "n_recordings_read": 385,
+  "sampled": false,
+  "n_data_files": 385,
+  "data_formats": [
+   ".vhdr"
+  ],
+  "total_size_gb": 48.04,
+  "sampling_rates_hz": {
+   "2000.0": 385
+  },
+  "hours_declared": 32.3,
+  "electrode_types": {
+   "ECOG": 19974
+  },
+  "manufacturers": {
+   "Neuralynx": 385
+  }
+ },
+ "score": 0.818,
+ "grade": "B",
+ "categories": {
+  "identity": 0.778,
+  "acquisition": 0.786,
+  "channels": 1.0,
+  "localization": 0.0,
+  "subjects": 1.0
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: 10.18112/openneuro.ds003498.v1.0.1"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "no citation guidance"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "README 3056 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "EthicsApprovals missing"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "385 iEEG data files (.vhdr)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "Manufacturer given in 100% of 385 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 0% of 385 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 385 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 385 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 385 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "iEEGReference given in 0% of 385 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": true,
+   "detail": "RecordingDuration given in 100% of 385 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 2000.0 Hz \u00d7385"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 385 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 385 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "0 scalp/EKG channels typed as iEEG (of 19974 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 385 channel tables; no channel ever marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 385 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 385"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 20 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": false,
+   "detail": "electrode positions for 0% of 20 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no electrodes.tsv"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'epilepsy', 'hand', 'ilae', 'lesion', 'months_follow_up', 'nights', 'outcome', 'participant_id', 'sex']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "clinical/implant columns: ['epilepsy', 'outcome']"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": null,
+   "detail": "no task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": true,
+   "detail": "893 distinct labels; top: ['ripple_PR1-2', 'ripple_AHR3-4', 'ripple_PL2-3', 'ripple_AHR1-2', 'ripple_HL1-2', 'ripple_AHR2-3']"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": null,
+   "detail": "no task entity"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-01/ses-interictalsleep/ieeg/sub-01_ses-interictalsleep_run-01_ieeg.vhdr",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds003498/sub-01/ses-i)",
+   "sfreq": 2000.0,
+   "n_ieeg_channels": 50,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "AL8"
+   ],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "AL8"
+   ],
+   "line_noise_ratio": 3.9602572468437165,
+   "measured_band_limit_hz": 975.925,
+   "nyquist_hz": 1000.0,
+   "declared_software_filters": {
+    "Sampling": {
+     "Downsampled (Hz)": 2000
+    }
+   },
+   "declared_hardware_filters": {
+    "Bandpass RC filter": {
+     "low cutoff (Hz)": 1000,
+     "high cutoff (Hz)": 0.5
+    }
+   }
+  },
+  {
+   "recording": "sub-08/ses-interictalsleep/ieeg/sub-08_ses-interictalsleep_run-08_ieeg.vhdr",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds003498/sub-08/ses-i)",
+   "sfreq": 2000.0,
+   "n_ieeg_channels": 64,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "AR7",
+    "AR8"
+   ],
+   "bids_bad_channels": [],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "AR7",
+    "AR8"
+   ],
+   "line_noise_ratio": 1.3963597045763092,
+   "measured_band_limit_hz": 150.05,
+   "nyquist_hz": 1000.0,
+   "declared_software_filters": {
+    "Sampling": {
+     "Downsampled (Hz)": 2000
+    }
+   },
+   "declared_hardware_filters": {
+    "Bandpass RC filter": {
+     "low cutoff (Hz)": 1000,
+     "high cutoff (Hz)": 0.5
+    }
+   }
+  }
+ ]
+}

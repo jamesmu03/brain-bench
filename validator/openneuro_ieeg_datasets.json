@@ -1,0 +1,892 @@
+[
+ {
+  "id": "ds002799",
+  "name": "Human es-fMRI Resource: Concurrent deep-brain stimulation and whole-brain functional MRI",
+  "tag": "1.0.4",
+  "size_gb": 19.94,
+  "n_subjects": 26,
+  "modalities": [
+   "mri",
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "10.18112/openneuro.ds002799.v1.0.4"
+ },
+ {
+  "id": "ds003029",
+  "name": "Epilepsy-iEEG-Multicenter-Dataset",
+  "tag": "1.0.7",
+  "size_gb": 11.08,
+  "n_subjects": 35,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds003029.v1.0.7"
+ },
+ {
+  "id": "ds003078",
+  "name": "PROBE iEEG",
+  "tag": "1.0.0",
+  "size_gb": 11.76,
+  "n_subjects": 6,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "10.18112/openneuro.ds003078.v1.0.0"
+ },
+ {
+  "id": "ds003374",
+  "name": "Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation",
+  "tag": "1.1.1",
+  "size_gb": 0.18,
+  "n_subjects": 9,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "10.18112/openneuro.ds003374.v1.1.1"
+ },
+ {
+  "id": "ds003498",
+  "name": "interictal iEEG during slow-wave sleep with HFO markings",
+  "tag": "1.1.1",
+  "size_gb": 48.03,
+  "n_subjects": 20,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds003498.v1.1.1"
+ },
+ {
+  "id": "ds003688",
+  "name": "Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual film",
+  "tag": "1.0.7",
+  "size_gb": 16.33,
+  "n_subjects": 63,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds003688.v1.0.7"
+ },
+ {
+  "id": "ds003708",
+  "name": "Basis profile curve identification to understand electrical stimulation effects in human brain networks",
+  "tag": "1.0.4",
+  "size_gb": 0.65,
+  "n_subjects": 1,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds003708.v1.0.4"
+ },
+ {
+  "id": "ds003844",
+  "name": "Dataset Clinical Epilepsy iEEG to BIDS -RESPect_intraoperative_iEEG",
+  "tag": "1.0.3",
+  "size_gb": 2.8,
+  "n_subjects": 6,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "10.18112/openneuro.ds003844.v1.0.3"
+ },
+ {
+  "id": "ds003848",
+  "name": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
+  "tag": "1.0.3",
+  "size_gb": 69.77,
+  "n_subjects": 6,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "10.18112/openneuro.ds003848.v1.0.3"
+ },
+ {
+  "id": "ds003876",
+  "name": "Epilepsy-iEEG-Interictal-Multicenter-Dataset",
+  "tag": "1.0.2",
+  "size_gb": 5.37,
+  "n_subjects": 39,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds003876.v1.0.2"
+ },
+ {
+  "id": "ds004100",
+  "name": "HUP iEEG Epilepsy Dataset",
+  "tag": "1.1.3",
+  "size_gb": 14.2,
+  "n_subjects": 57,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004100.v1.1.3"
+ },
+ {
+  "id": "ds004127",
+  "name": "Somatosensory Cortex Rat DISC Data",
+  "tag": "3.0.0",
+  "size_gb": 201.35,
+  "n_subjects": 8,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004127.v3.0.0"
+ },
+ {
+  "id": "ds004194",
+  "name": "Visual ECoG dataset",
+  "tag": "3.0.0",
+  "size_gb": 8.41,
+  "n_subjects": 14,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004194.v3.0.0"
+ },
+ {
+  "id": "ds004080",
+  "name": "CCEP ECoG dataset across age 4-51",
+  "tag": "1.2.4",
+  "size_gb": 288.95,
+  "n_subjects": 74,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004080.v1.2.4"
+ },
+ {
+  "id": "ds004370",
+  "name": "PRIOS",
+  "tag": "1.0.2",
+  "size_gb": 29.58,
+  "n_subjects": 7,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004370.v1.0.2"
+ },
+ {
+  "id": "ds004457",
+  "name": "Electrical stimulation of temporal and limbic circuitry produces distinct responses in human ventral temporal cortex",
+  "tag": "1.0.2",
+  "size_gb": 11.71,
+  "n_subjects": 5,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004457.v1.0.2"
+ },
+ {
+  "id": "ds004473",
+  "name": "sEEG Forced Two-Choice Task",
+  "tag": "1.0.2",
+  "size_gb": 6.77,
+  "n_subjects": 8,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004473.v1.0.2"
+ },
+ {
+  "id": "ds004551",
+  "name": "iEEG on children during slow wave sleep\n",
+  "tag": "1.0.6",
+  "size_gb": 74.02,
+  "n_subjects": 114,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004551.v1.0.6"
+ },
+ {
+  "id": "ds004624",
+  "name": "Intracranial recordings using BCI2000 and the CorTec BrainInterchange",
+  "tag": "2.0.0",
+  "size_gb": 20.74,
+  "n_subjects": 3,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004624.v2.0.0"
+ },
+ {
+  "id": "ds004642",
+  "name": "Intraoperative recordings of medianus stimulation with low and high impedance ECoG",
+  "tag": "1.0.1",
+  "size_gb": 1.29,
+  "n_subjects": 10,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004642.v1.0.1"
+ },
+ {
+  "id": "ds004696",
+  "name": "HAPwave_bids",
+  "tag": "1.0.1",
+  "size_gb": 15.21,
+  "n_subjects": 8,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004696.v1.0.1"
+ },
+ {
+  "id": "ds004703",
+  "name": "sEEG Passive listening to natural speech",
+  "tag": "1.1.0",
+  "size_gb": 13.28,
+  "n_subjects": 10,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004703.v1.1.0"
+ },
+ {
+  "id": "ds004752",
+  "name": "Dataset of intracranial EEG, scalp EEG and beamforming sources from epilepsy patients performing a verbal working memory task",
+  "tag": "1.0.1",
+  "size_gb": 10.98,
+  "n_subjects": 15,
+  "modalities": [
+   "ieeg",
+   "eeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004752.v1.0.1"
+ },
+ {
+  "id": "ds004770",
+  "name": "iEEG on children during gameplay",
+  "tag": "1.0.0",
+  "size_gb": 9.33,
+  "n_subjects": 10,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004770.v1.0.0"
+ },
+ {
+  "id": "ds004774",
+  "name": "Automatic Evoked Response Detection (ER-Detect) dataset",
+  "tag": "1.0.0",
+  "size_gb": 26.61,
+  "n_subjects": 14,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004774.v1.0.0"
+ },
+ {
+  "id": "ds004789",
+  "name": "Delayed Free Recall of Word Lists",
+  "tag": "3.1.0",
+  "size_gb": 618.81,
+  "n_subjects": 280,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004789.v3.1.0"
+ },
+ {
+  "id": "ds004809",
+  "name": "Categorized Free Recall: Delayed Free Recall of Word Lists Organized by Semantic Categories",
+  "tag": "2.2.0",
+  "size_gb": 512.37,
+  "n_subjects": 258,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004809.v2.2.0"
+ },
+ {
+  "id": "ds004819",
+  "name": "Flexible, Scalable, High Channel Count Stereo-Electrode for Recording in the Human Brain",
+  "tag": "1.0.0",
+  "size_gb": 0.72,
+  "n_subjects": 1,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004819.v1.0.0"
+ },
+ {
+  "id": "ds004859",
+  "name": "iEEG on children during Stroop task",
+  "tag": "1.0.0",
+  "size_gb": 2.44,
+  "n_subjects": 7,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004859.v1.0.0"
+ },
+ {
+  "id": "ds004865",
+  "name": "pyFR: Delayed Free Recall of Word Lists, Preliminary Cognitive Electrophysiology Study",
+  "tag": "2.0.1",
+  "size_gb": 105.0,
+  "n_subjects": 49,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004865.v2.0.1"
+ },
+ {
+  "id": "ds004944",
+  "name": "Dataset of BCI2000-compatible intraoperative ECoG with neuromorphic encoding",
+  "tag": "1.1.0",
+  "size_gb": 0.47,
+  "n_subjects": 22,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004944.v1.1.0"
+ },
+ {
+  "id": "ds004977",
+  "name": "CARLA: Adjusted common average referencing for cortico-cortical evoked potential data",
+  "tag": "1.2.0",
+  "size_gb": 1.6,
+  "n_subjects": 4,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004977.v1.2.0"
+ },
+ {
+  "id": "ds004993",
+  "name": "WIRED ICM Sample Dataset - Workshop on Intracranial Recordings in Humans, Epilepsy, DBS",
+  "tag": "1.1.2",
+  "size_gb": 0.32,
+  "n_subjects": 3,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds004993.v1.1.2"
+ },
+ {
+  "id": "ds005007",
+  "name": "Auditory naming task with questions that begin or end with a wh-interrogative",
+  "tag": "1.0.0",
+  "size_gb": 8.9,
+  "n_subjects": 40,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005007.v1.0.0"
+ },
+ {
+  "id": "ds005059",
+  "name": "Paired Associates Learning: Memory for Word Pairs in Cued Recall",
+  "tag": "1.0.6",
+  "size_gb": 179.63,
+  "n_subjects": 72,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005059.v1.0.6"
+ },
+ {
+  "id": "ds005083",
+  "name": "Safety and Accuracy of Stereoelectroencephalography for Pediatric Patients with Prior Craniotomy",
+  "tag": "1.0.0",
+  "size_gb": 0.0,
+  "n_subjects": 60,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005083.v1.0.0"
+ },
+ {
+  "id": "ds005169",
+  "name": "Dataset of intracranial EEG during cortical stimulation evoking visual effects",
+  "tag": "1.0.0",
+  "size_gb": 4.32,
+  "n_subjects": 20,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005169.v1.0.0"
+ },
+ {
+  "id": "ds005398",
+  "name": "Open iEEG Dataset (Pediatric iEEG, Wayne State University and UCLA)",
+  "tag": "1.1.3",
+  "size_gb": 109.73,
+  "n_subjects": 185,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005398.v1.1.3"
+ },
+ {
+  "id": "ds005411",
+  "name": "Free Recall of Word Lists with Repeated Items",
+  "tag": "1.0.1",
+  "size_gb": 168.96,
+  "n_subjects": 48,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005411.v1.0.1"
+ },
+ {
+  "id": "ds005415",
+  "name": "Numbers",
+  "tag": "1.0.0",
+  "size_gb": 8.02,
+  "n_subjects": 13,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005415.v1.0.0"
+ },
+ {
+  "id": "ds005448",
+  "name": "STReEF",
+  "tag": "1.0.0",
+  "size_gb": 48.03,
+  "n_subjects": 13,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005448.v1.0.0"
+ },
+ {
+  "id": "ds005489",
+  "name": "Free Recall with Open-Loop Stimulation at Encoding",
+  "tag": "1.0.3",
+  "size_gb": 69.73,
+  "n_subjects": 38,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005489.v1.0.3"
+ },
+ {
+  "id": "ds005491",
+  "name": "Categorized Free Recall with Open-Loop Stimulation at Encoding",
+  "tag": "1.0.0",
+  "size_gb": 24.2,
+  "n_subjects": 19,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005491.v1.0.0"
+ },
+ {
+  "id": "ds005494",
+  "name": "Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval",
+  "tag": "1.0.1",
+  "size_gb": 28.28,
+  "n_subjects": 20,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005494.v1.0.1"
+ },
+ {
+  "id": "ds005522",
+  "name": "Spatial Navigation Memory of Object Locations",
+  "tag": "1.0.0",
+  "size_gb": 115.39,
+  "n_subjects": 58,
+  "modalities": [
+   "ieeg",
+   "beh"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005522.v1.0.0"
+ },
+ {
+  "id": "ds005523",
+  "name": "Spatial Memory of Object Locations with Open-Loop Stimulation at Encoding",
+  "tag": "1.0.1",
+  "size_gb": 74.83,
+  "n_subjects": 22,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005523.v1.0.1"
+ },
+ {
+  "id": "ds005545",
+  "name": "Auditory naming",
+  "tag": "1.0.3",
+  "size_gb": 42.91,
+  "n_subjects": 106,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005545.v1.0.3"
+ },
+ {
+  "id": "ds005557",
+  "name": "Free Recall with Closed-Loop Stimulation at Encoding (Encoding Classifier)",
+  "tag": "1.0.0",
+  "size_gb": 37.24,
+  "n_subjects": 18,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005557.v1.0.0"
+ },
+ {
+  "id": "ds005558",
+  "name": "Categorized Free Recall with Closed-Loop Stimulation at Encoding (Encoding Classifier)",
+  "tag": "1.0.0",
+  "size_gb": 13.09,
+  "n_subjects": 9,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005558.v1.0.0"
+ },
+ {
+  "id": "ds005574",
+  "name": "The \"Podcast\" ECoG dataset",
+  "tag": "1.0.2",
+  "size_gb": 3.48,
+  "n_subjects": 9,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005574.v1.0.2"
+ },
+ {
+  "id": "ds005624",
+  "name": "Color Change Detection Task",
+  "tag": "1.0.0",
+  "size_gb": 14.77,
+  "n_subjects": 24,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005624.v1.0.0"
+ },
+ {
+  "id": "ds005670",
+  "name": "SEEG Resting State Recording",
+  "tag": "1.0.0",
+  "size_gb": 0.74,
+  "n_subjects": 2,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005670.v1.0.0"
+ },
+ {
+  "id": "ds005691",
+  "name": "SpinalExpect_Invasive",
+  "tag": "1.0.0",
+  "size_gb": 0.76,
+  "n_subjects": 8,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005691.v1.0.0"
+ },
+ {
+  "id": "ds005931",
+  "name": "Visuomotor_task",
+  "tag": "1.0.0",
+  "size_gb": 0.86,
+  "n_subjects": 8,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005931.v1.0.0"
+ },
+ {
+  "id": "ds005953",
+  "name": "iEEG_visual",
+  "tag": "1.0.0",
+  "size_gb": 0.61,
+  "n_subjects": 2,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005953.v1.0.0"
+ },
+ {
+  "id": "ds006065",
+  "name": "TSS_iEEG",
+  "tag": "1.0.0",
+  "size_gb": 10.34,
+  "n_subjects": 7,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006065.v1.0.0"
+ },
+ {
+  "id": "ds006107",
+  "name": "iEEG_Neural_spatial_volatility",
+  "tag": "1.0.0",
+  "size_gb": 12.78,
+  "n_subjects": 166,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006107.v1.0.0"
+ },
+ {
+  "id": "ds006136",
+  "name": "OWM-Dataset",
+  "tag": "1.0.1",
+  "size_gb": 0.3,
+  "n_subjects": 13,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006136.v1.0.1"
+ },
+ {
+  "id": "ds006233",
+  "name": "Picture naming",
+  "tag": "1.0.0",
+  "size_gb": 18.58,
+  "n_subjects": 108,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006233.v1.0.0"
+ },
+ {
+  "id": "ds006234",
+  "name": "Auditory naming",
+  "tag": "1.0.0",
+  "size_gb": 47.17,
+  "n_subjects": 119,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006234.v1.0.0"
+ },
+ {
+  "id": "ds006253",
+  "name": "MetaRDK",
+  "tag": "1.0.3",
+  "size_gb": 0.0,
+  "n_subjects": 21,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006253.v1.0.3"
+ },
+ {
+  "id": "ds006254",
+  "name": "IEEG CCEP Recording",
+  "tag": "1.0.0",
+  "size_gb": 168.3,
+  "n_subjects": 30,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006254.v1.0.0"
+ },
+ {
+  "id": "ds006392",
+  "name": "HED schema library for SCORE annotations example",
+  "tag": "1.0.1",
+  "size_gb": 0.03,
+  "n_subjects": 1,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006392.v1.0.1"
+ },
+ {
+  "id": "ds006519",
+  "name": "Dataset of intracranial EEG during cortical stimulations evoking negative motor responses",
+  "tag": "1.0.0",
+  "size_gb": 1.12,
+  "n_subjects": 21,
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006519.v1.0.0"
+ },
+ {
+  "id": "ds006890",
+  "name": "Longitudinal Multitask Wireless ECoG Data from Two Fully Implanted Macaca fuscata",
+  "tag": "1.0.0",
+  "size_gb": 44.21,
+  "n_subjects": 2,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006890.v1.0.0"
+ },
+ {
+  "id": "ds006910",
+  "name": "Auditory Naming EC",
+  "tag": "1.0.1",
+  "size_gb": 47.89,
+  "n_subjects": 121,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006910.v1.0.1"
+ },
+ {
+  "id": "ds006914",
+  "name": "Visual Naming EC",
+  "tag": "1.0.3",
+  "size_gb": 18.84,
+  "n_subjects": 110,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds006914.v1.0.3"
+ },
+ {
+  "id": "ds007095",
+  "name": "RNS_Epilepsy-iBIDS",
+  "tag": "1.0.0",
+  "size_gb": 0.52,
+  "n_subjects": 8,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds007095.v1.0.0"
+ },
+ {
+  "id": "ds007118",
+  "name": "iEEG_comprehensive_HFA_model_part1",
+  "tag": "1.0.0",
+  "size_gb": 36.32,
+  "n_subjects": 65,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds007118.v1.0.0"
+ },
+ {
+  "id": "ds007119",
+  "name": "iEEG_comprehensive_HFA_model_part3",
+  "tag": "1.0.0",
+  "size_gb": 34.98,
+  "n_subjects": 103,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds007119.v1.0.0"
+ },
+ {
+  "id": "ds007120",
+  "name": "iEEG_comprehensive_HFA_model_part2",
+  "tag": "1.0.0",
+  "size_gb": 35.45,
+  "n_subjects": 65,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds007120.v1.0.0"
+ },
+ {
+  "id": "ds007703",
+  "name": "Single pulse electrical stimulation in white matter modulates iEEG visual responses in human early visual cortex",
+  "tag": "1.0.0",
+  "size_gb": 12.29,
+  "n_subjects": 2,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds007703.v1.0.0"
+ },
+ {
+  "id": "ds008610",
+  "name": "FUS and Tactile Neuromodulation in NHP VPL - Electrophysiology",
+  "tag": "1.0.0",
+  "size_gb": 5.44,
+  "n_subjects": 2,
+  "modalities": [
+   "ieeg"
+  ],
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds008610.v1.0.0"
+ }
+]

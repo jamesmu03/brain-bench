@@ -1,0 +1,25 @@
+{
+  "submission": "example_submission.py",
+  "sha256": "db7310bcb43d220a1878706571aa247979e536e9f6ccea24aa051131e55fd9ef",
+  "model": "MeanPowerModel",
+  "task": "media_vs_rest",
+  "dataset": null,
+  "release": "pilot",
+  "schema_version": "0.1.0",
+  "holdout_source": "ajile12",
+  "evaluated_at": "2026-10-03T21:02:16+00:00",
+  "results": {
+    "test": {
+      "n_windows": 282,
+      "n_subjects": 2,
+      "balanced_accuracy": 0.4833645735707591,
+      "auroc": 0.49177014995313967
+    },
+    "test_xdevice": {
+      "n_windows": 1175,
+      "n_subjects": 2,
+      "balanced_accuracy": 0.43913612565445026,
+      "auroc": 0.29498350339486124
+    }
+  }
+}

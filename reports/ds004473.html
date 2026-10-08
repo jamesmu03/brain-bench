@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trust report · ds004473</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#163f78;--navy-dark:#0b1f3f;--ink:#0f1724;--ink-2:#2b3443;--muted:#6f7681;--faint:#9aa0a9;--line:#e8e4db;--cream:#f8f6f1;--cream-2:#f2efe8;--paper:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:15.5px/1.6 Inter,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:900px;margin:0 auto;padding:40px 24px 64px}
+.top{display:flex;justify-content:space-between;align-items:baseline;color:var(--muted);font-size:13px;margin-bottom:28px}
+.top b{color:var(--ink);font-weight:600;letter-spacing:.02em}
+h1{font-weight:400;font-size:34px;letter-spacing:-.025em;line-height:1.15;margin:0 0 6px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 28px}
+.meta a{color:var(--navy)}
+.verdict{background:var(--navy-dark);color:#fff;border-radius:16px;padding:26px 28px;margin-bottom:22px}
+.verdict .label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.verdict h2{font-weight:400;font-size:26px;letter-spacing:-.02em;margin:6px 0 10px}
+.verdict p{margin:0;color:rgba(255,255,255,.8)}
+.grades{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 30px}
+.g{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.g b{display:block;font-weight:400;font-size:30px;letter-spacing:-.02em;color:var(--navy);line-height:1}
+.g span{display:block;margin-top:6px;font-size:13px;color:var(--muted)}
+h3{font-weight:500;font-size:20px;letter-spacing:-.01em;margin:34px 0 12px}
+.risk{background:var(--paper);border:1px solid var(--line);border-left:4px solid #e0a43a;border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.risk.conflict{border-left-color:#c2410c}
+.risk b{font-weight:600}
+.risk p{margin:4px 0 0;color:var(--ink-2);font-size:14.5px}
+.q{color:var(--muted);font-size:13.5px;margin-top:6px}
+ul.ok{margin:0;padding-left:18px;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13.5px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:500;padding:10px 12px;border-bottom:1px solid var(--line)}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.s-attested{background:#163f78;color:#fff}.s-inferred{background:#d9e4f4;color:#11305c}.s-conflict{background:#fff4dc;color:#7a4b00}.s-missing{background:#fde8e8;color:#8a1c1c}
+.small{color:var(--muted);font-size:13px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+@media print{body{background:#fff}.verdict{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media (max-width:700px){.grades{grid-template-columns:1fr}}
+</style></head><body><div class=page>
+<div class=top><b>brain-bench · TRUST REPORT</b><span>6 October 2026</span></div>
+<h1>sEEG Forced Two-Choice Task</h1>
+<p class=meta>openneuro ds004473 · version 1.0.2 · BIDS · 8 subjects · <a href="https://openneuro.org/datasets/ds004473/versions/1.0.2">archive page</a></p>
+
+<div class=verdict><div class=label>Verdict</div><h2>Usable with care</h2><p>2 required fields are missing; 1 only stated in the paper.</p></div>
+<div class=grades>
+<div class=g><b>D</b><span>The data as deposited (0.53)</span></div>
+<div class=g><b>C</b><span>Counting what the paper adds, unconfirmed (0.65)</span></div>
+<div class=g><b>C</b><span>If the authors confirmed it (0.78)</span></div>
+</div>
+
+<h3>What to watch for</h3>
+<div class=risk><b>Recording system / amplifier: missing.</b><p>Neither the data nor an open-access paper states it. You can't correct for hardware differences when combining this with data from other hospitals.</p></div><div class=risk><b>Reference scheme: missing.</b><p>Neither the data nor an open-access paper states it. The same activity looks different under different references, so signals may not be comparable to other datasets.</p></div><div class=risk><b>Subjects by diagnosis: only in the paper.</b><p>The paper says: 8 patients with medically intractable focal epilepsy. The data doesn't state it, so treat this as unconfirmed. You can't tell which patient population a model would be learning from.</p><div class=q>“Eight patients with medically intractable focal epilepsy were surgically implanted with sEEG electrodes for clinical localization of ictal (seizure) onset and epileptogenic zones.” · 10.1088/1741-2552/acae0a</div></div><div class=risk><b>Task design: only in the paper.</b><p>The paper says: Forced two-choice reaction time task: left/right arrow cue after 300-700 ms fixation, respond with arrow keys; 300 trials. The data doesn't state it, so treat this as unconfirmed. Labels are hard to interpret without knowing what patients were doing.</p><div class=q>“Patients performed a forced two-choice reaction time task with the left and right arrow keys on a laptop using the index and middle finger of their dominant hand respectively ( Figure 1 ).” · 10.1088/1741-2552/acae0a</div></div><div class=risk><b>Consent scope: only in the paper.</b><p>The paper says: Written informed consent, including publication of anonymized identifiable data. The data doesn't state it, so treat this as unconfirmed. It's unclear whether reuse, especially commercial reuse, is covered by what patients agreed to.</p><div class=q>“Consent was given for publication of anonymized identifiable data from all participants.” · 10.1088/1741-2552/acae0a</div></div><div class=risk><b>Ethics approval: only in the paper.</b><p>The paper says: Oregon Health &amp; Science University IRB (MOD00042329). The data doesn't state it, so treat this as unconfirmed. There is no record of ethics approval to point to if your use is questioned.</p><div class=q>“IRB approval was obtained at Oregon Health &amp; Science University (MOD00042329).” · 10.1088/1741-2552/acae0a</div></div>
+
+<h3>What the data states</h3>
+<ul class=ok><li>Sampling rate</li><li>Filter settings</li><li>Electrode types and counts</li><li>Electrode localization method</li><li>Event annotations</li><li>License</li><li>Linked publication DOI</li></ul>
+
+<h3>All fields</h3>
+<table><thead><tr><th>Field</th><th>Status</th><th>In the data</th><th>In the paper</th></tr></thead><tbody><tr><td>Sampling rate<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>999.412 Hz</td><td><span class=small>—</span></td></tr><tr><td>Filter settings<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>n/a; [&#x27;0-499.706055261611&#x27;]</td><td>analysis only: 0.1-40 Hz FIR band-pass for ERP features</td></tr><tr><td>Recording system / amplifier<div class=small>required</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td>Amplifier not named; electrodes by PMT (Chanhassen, MN, USA)</td></tr><tr><td>Electrode types and counts<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>SEEG (128)</td><td>sEEG depth electrodes (PMT); 979 contacts total, 122 +/- 2 per patient</td></tr><tr><td>Reference scheme<div class=small>required</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td>analysis only: average re-referenced after excluding bad channels</td></tr><tr><td>Electrode localization method<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>coordinates given, coordinate space not stated</td><td>Post-op CT registered to pre-op MRI using MNE-Python; Desikan-Killiany labels via Freesurfer; warped to cvs_avg35_inMNI152 template</td></tr><tr><td>Subjects by diagnosis<div class=small>required</div></td><td><span class='pill s-inferred'>From the paper</span></td><td>n_subjects</td><td>8 patients with medically intractable focal epilepsy</td></tr><tr><td>License<div class=small>required</div></td><td><span class='pill s-attested'>In the data</span></td><td>CC0</td><td><span class=small>—</span></td></tr><tr><td>Task design<div class=small>recommended</div></td><td><span class='pill s-inferred'>From the paper</span></td><td>tasks: SlowFast</td><td>Forced two-choice reaction time task: left/right arrow cue after 300-700 ms fixation, respond with arrow keys; 300 trials</td></tr><tr><td>Event annotations<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>recordings_with_events: 1.0</td><td>yes: photodiode events recorded on the amplifier to synchronize task (cue) events; keypress times derived</td></tr><tr><td>Consent scope<div class=small>recommended</div></td><td><span class='pill s-inferred'>From the paper</span></td><td><span class=small>—</span></td><td>Written informed consent, including publication of anonymized identifiable data</td></tr><tr><td>Ethics approval<div class=small>recommended</div></td><td><span class='pill s-inferred'>From the paper</span></td><td><span class=small>—</span></td><td>Oregon Health &amp; Science University IRB (MOD00042329)</td></tr><tr><td>Linked publication DOI<div class=small>recommended</div></td><td><span class='pill s-attested'>In the data</span></td><td>dataset_doi: doi:10.18112/openneuro.ds004473.v1.0.1; publication_dois: 10.1088/1741-2552/acae0a, 10.21105/joss.01896…</td><td><span class=small>—</span></td></tr><tr><td>Medication status<div class=small>optional</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td><span class=small>—</span></td></tr><tr><td>De-identification method<div class=small>optional</div></td><td><span class='pill s-missing'>Missing</span></td><td><span class=small>—</span></td><td><span class=small>—</span></td></tr></tbody></table>
+
+<h3>How we checked</h3>
+<p class=small>We read the dataset's descriptive files (sidecars, channel and electrode tables, NWB headers) without downloading the recordings, and the open-access paper(s) describing it (10.1088/1741-2552/acae0a). Values from a paper are only used when backed by a sentence quoted word for word from it, and they stay labelled as unconfirmed. We check that information is present and consistent; we don't judge the science. Paywalled papers are not read.</p>
+
+<footer>brain-bench grades are independent: whoever pays for a report has no say in its result. This report refers to the dataset version above.</footer>
+</div></body></html>

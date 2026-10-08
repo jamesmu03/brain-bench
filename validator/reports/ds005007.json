@@ -1,0 +1,484 @@
+{
+ "validator": {
+  "name": "brain-bench",
+  "version": "0.0.1",
+  "spec": "0.1",
+  "run_at": "2026-10-04T21:36:42+00:00"
+ },
+ "dataset": {
+  "id": "ds005007",
+  "name": "Auditory naming task with questions that begin or end with a wh-interrogative",
+  "license": "CC0",
+  "doi": "doi:10.18112/openneuro.ds005007.v1.0.0",
+  "archive": "openneuro",
+  "version": null,
+  "bids_version": "1.7.0",
+  "species": "unknown",
+  "n_subjects": 40,
+  "n_recordings_listed": 42,
+  "n_recordings_read": 42,
+  "sampled": false,
+  "n_data_files": 42,
+  "data_formats": [
+   ".edf"
+  ],
+  "total_size_gb": 8.9,
+  "sampling_rates_hz": {
+   "1000": 42
+  },
+  "hours_declared": null,
+  "electrode_types": {
+   "ECOG": 4423
+  },
+  "manufacturers": {
+   "n/a": 42
+  }
+ },
+ "score": 0.673,
+ "grade": "C",
+ "categories": {
+  "identity": 0.889,
+  "acquisition": 0.5,
+  "channels": 0.846,
+  "localization": 0.714,
+  "subjects": 0.6,
+  "labels": 0.25
+ },
+ "checks": [
+  {
+   "id": "license",
+   "category": "identity",
+   "weight": 3,
+   "passed": true,
+   "detail": "License: CC0"
+  },
+  {
+   "id": "doi",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "DatasetDOI: doi:10.18112/openneuro.ds005007.v1.0.0"
+  },
+  {
+   "id": "citation",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "HowToAcknowledge/ReferencesAndLinks present"
+  },
+  {
+   "id": "readme",
+   "category": "identity",
+   "weight": 1,
+   "passed": false,
+   "detail": "README 0 chars"
+  },
+  {
+   "id": "ethics",
+   "category": "identity",
+   "weight": 1,
+   "passed": true,
+   "detail": "EthicsApprovals present"
+  },
+  {
+   "id": "data_present",
+   "category": "identity",
+   "weight": 2,
+   "passed": true,
+   "detail": "42 iEEG data files (.edf)"
+  },
+  {
+   "id": "manufacturer",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": false,
+   "detail": "Manufacturer given in 0% of 42 sidecars"
+  },
+  {
+   "id": "model",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "ManufacturersModelName given in 90% of 42 sidecars"
+  },
+  {
+   "id": "line_freq",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "PowerLineFrequency given in 100% of 42 sidecars"
+  },
+  {
+   "id": "hardware_filters",
+   "category": "acquisition",
+   "weight": 3,
+   "passed": true,
+   "detail": "hardware filters stated for 100% of 42 recordings"
+  },
+  {
+   "id": "software_filters",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": true,
+   "detail": "SoftwareFilters field present in 100% of 42 (n/a counts: it states that none were applied)"
+  },
+  {
+   "id": "reference",
+   "category": "acquisition",
+   "weight": 2,
+   "passed": false,
+   "detail": "iEEGReference given in 0% of 42 sidecars"
+  },
+  {
+   "id": "duration",
+   "category": "acquisition",
+   "weight": 1,
+   "passed": false,
+   "detail": "RecordingDuration given in 0% of 42 sidecars"
+  },
+  {
+   "id": "sfreq",
+   "category": "acquisition",
+   "weight": 0,
+   "passed": true,
+   "detail": "sampling rates: 1000 Hz \u00d742"
+  },
+  {
+   "id": "channels_tsv",
+   "category": "channels",
+   "weight": 3,
+   "passed": true,
+   "detail": "channels.tsv for 100% of 42 recordings"
+  },
+  {
+   "id": "channel_types_valid",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100.0% of channels have a valid BIDS type"
+  },
+  {
+   "id": "ieeg_channels_exist",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 42 recordings have ECOG/SEEG/DBS channels"
+  },
+  {
+   "id": "scalp_mislabeled",
+   "category": "channels",
+   "weight": 2,
+   "passed": false,
+   "detail": "76 scalp/EKG channels typed as iEEG (of 4423 iEEG channels)"
+  },
+  {
+   "id": "status_column",
+   "category": "channels",
+   "weight": 2,
+   "passed": true,
+   "detail": "status column in 100% of 42 channel tables; some channels marked bad"
+  },
+  {
+   "id": "units",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "units given in 100% of 42 channel tables"
+  },
+  {
+   "id": "sidecar_counts_match",
+   "category": "channels",
+   "weight": 1,
+   "passed": true,
+   "detail": "sidecar iEEG channel counts match channels.tsv in 100% of 42"
+  },
+  {
+   "id": "channel_count_consistency",
+   "category": "channels",
+   "weight": 0,
+   "passed": true,
+   "detail": "0 of 40 subjects have runs with different channel counts"
+  },
+  {
+   "id": "electrodes_tsv",
+   "category": "localization",
+   "weight": 3,
+   "passed": true,
+   "detail": "electrode positions for 100% of 40 subjects"
+  },
+  {
+   "id": "coordsystem",
+   "category": "localization",
+   "weight": 2,
+   "passed": false,
+   "detail": "electrodes.tsv without coordsystem.json"
+  },
+  {
+   "id": "template_space",
+   "category": "localization",
+   "weight": 2,
+   "passed": null,
+   "detail": "no coordsystem.json"
+  },
+  {
+   "id": "coords_complete",
+   "category": "localization",
+   "weight": 2,
+   "passed": true,
+   "detail": "100% of 3388 electrodes have numeric coordinates"
+  },
+  {
+   "id": "participants",
+   "category": "subjects",
+   "weight": 2,
+   "passed": true,
+   "detail": "participants.tsv columns: ['age', 'handedness', 'participant_id', 'sex']; age/sex filled: ['age', 'sex']"
+  },
+  {
+   "id": "participants_dictionary",
+   "category": "subjects",
+   "weight": 1,
+   "passed": true,
+   "detail": "participants.json present"
+  },
+  {
+   "id": "clinical_context",
+   "category": "subjects",
+   "weight": 2,
+   "passed": false,
+   "detail": "clinical/implant columns: none"
+  },
+  {
+   "id": "events_present",
+   "category": "labels",
+   "weight": 3,
+   "passed": false,
+   "detail": "events.tsv (non-empty) for 0% of 42 task recordings"
+  },
+  {
+   "id": "events_vocabulary",
+   "category": "labels",
+   "weight": 0,
+   "passed": null,
+   "detail": "no event labels"
+  },
+  {
+   "id": "task_description",
+   "category": "labels",
+   "weight": 1,
+   "passed": true,
+   "detail": "TaskDescription for 100% of 42 task recordings"
+  }
+ ],
+ "signal": [
+  {
+   "recording": "sub-01/ses-01/ieeg/sub-01_ses-01_task-namingtask_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds005007/sub-01/ses-0)",
+   "sfreq": 1000.0,
+   "n_ieeg_channels": 74,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "POL C10",
+    "POL E4",
+    "POL E5"
+   ],
+   "bids_bad_channels": [
+    "EEG F2-Ref",
+    "EEG F3-Ref",
+    "EEG F4-Ref",
+    "EEG F5-Ref",
+    "POL C01",
+    "POL C06",
+    "POL C07",
+    "POL C10",
+    "POL D01",
+    "POL D02",
+    "POL D03",
+    "POL D06",
+    "POL D07",
+    "POL H1",
+    "POL H2",
+    "POL H3",
+    "POL H4",
+    "POL H5",
+    "POL I2",
+    "POL I3",
+    "POL I4",
+    "POL I5",
+    "POL J6",
+    "POL K1",
+    "POL K2",
+    "POL K3",
+    "POL K4",
+    "POL K5",
+    "POL K6"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [
+    "POL E4",
+    "POL E5"
+   ],
+   "line_noise_ratio": 0.0007997060002818521,
+   "measured_band_limit_hz": 500.0,
+   "nyquist_hz": 500.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  },
+  {
+   "recording": "sub-20/ses-01/ieeg/sub-20_ses-01_task-namingtask_run-01_ieeg.edf",
+   "reader": "mne + channels.tsv (mne-bids failed: FileNotFoundError: [Errno 2] No such file or directory: 'data/validator/cache/ds005007/sub-20/ses-0)",
+   "sfreq": 1000.0,
+   "n_ieeg_channels": 184,
+   "seconds_measured": 120.0,
+   "flat_channels": [],
+   "variance_outliers": [
+    "POL A12",
+    "POL A50",
+    "POL A6",
+    "POL A60",
+    "POL B61",
+    "POL B64",
+    "POL C22",
+    "POL C45",
+    "POL C50",
+    "POL C51",
+    "POL C52",
+    "POL C55",
+    "POL C57",
+    "POL C60"
+   ],
+   "bids_bad_channels": [
+    "EEG C4-Ref",
+    "POL A12",
+    "POL A13",
+    "POL A14",
+    "POL A15",
+    "POL A17",
+    "POL A18",
+    "POL A19",
+    "POL A20",
+    "POL A30",
+    "POL A31",
+    "POL A35",
+    "POL A36",
+    "POL A37",
+    "POL A38",
+    "POL A39",
+    "POL A40",
+    "POL A41",
+    "POL A42",
+    "POL A44",
+    "POL A50",
+    "POL A51",
+    "POL A52",
+    "POL A53",
+    "POL A54",
+    "POL A55",
+    "POL A56",
+    "POL A57",
+    "POL A58",
+    "POL A59",
+    "POL A6",
+    "POL A60",
+    "POL A7",
+    "POL B1",
+    "POL B11",
+    "POL B12",
+    "POL B13",
+    "POL B14",
+    "POL B15",
+    "POL B16",
+    "POL B17",
+    "POL B18",
+    "POL B19",
+    "POL B2",
+    "POL B20",
+    "POL B21",
+    "POL B23",
+    "POL B24",
+    "POL B25",
+    "POL B26",
+    "POL B27",
+    "POL B3",
+    "POL B32",
+    "POL B4",
+    "POL B42",
+    "POL B43",
+    "POL B49",
+    "POL B5",
+    "POL B50",
+    "POL B51",
+    "POL B52",
+    "POL B53",
+    "POL B54",
+    "POL B55",
+    "POL B56",
+    "POL B57",
+    "POL B6",
+    "POL B61",
+    "POL B64",
+    "POL B7",
+    "POL B8",
+    "POL B9",
+    "POL C10",
+    "POL C11",
+    "POL C12",
+    "POL C13",
+    "POL C14",
+    "POL C15",
+    "POL C16",
+    "POL C17",
+    "POL C18",
+    "POL C19",
+    "POL C20",
+    "POL C21",
+    "POL C22",
+    "POL C23",
+    "POL C24",
+    "POL C26",
+    "POL C27",
+    "POL C28",
+    "POL C30",
+    "POL C31",
+    "POL C32",
+    "POL C34",
+    "POL C35",
+    "POL C36",
+    "POL C37",
+    "POL C38",
+    "POL C39",
+    "POL C40",
+    "POL C41",
+    "POL C42",
+    "POL C43",
+    "POL C44",
+    "POL C45",
+    "POL C46",
+    "POL C47",
+    "POL C48",
+    "POL C49",
+    "POL C50",
+    "POL C51",
+    "POL C52",
+    "POL C53",
+    "POL C54",
+    "POL C55",
+    "POL C56",
+    "POL C57",
+    "POL C58",
+    "POL C59",
+    "POL C60",
+    "POL C8",
+    "POL C9"
+   ],
+   "unmarked_flat": [],
+   "unmarked_outliers": [],
+   "line_noise_ratio": 0.09807676289018027,
+   "measured_band_limit_hz": 500.0,
+   "nyquist_hz": 500.0,
+   "declared_software_filters": "n/a",
+   "declared_hardware_filters": null
+  }
+ ]
+}
