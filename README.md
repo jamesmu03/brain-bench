@@ -1,20 +1,43 @@
 # brain-bench
 
-The trust layer for intracranial EEG (iEEG): independent grades for iEEG
-datasets, a public benchmark, and private evaluation of models on data that
-never leaves the people who collected it.
+AI-native data management for neuroscience. We're building a data platform to
+speed up neuroscience research loops, starting with intracranial EEG (iEEG)
+labs that need to share their data under NIH rules.
 
-This repository holds the public pieces: the validator specification and
-published grades, the data interface, the submission contract, the
-evaluation runner, and results.
+Demo and dataset grades: https://jamesmu03.github.io/brain-bench/
 
-## Validator
+## What works today
 
-Every human iEEG dataset on OpenNeuro has been graded under
-[`VALIDATOR-SPEC.md`](VALIDATOR-SPEC.md): 32 checks in six categories
-(identity, acquisition, channels, localization, subjects, labels), a weighted
-score and a letter grade. The grade answers one question: can someone who did
-not collect this data use it, and trust what it says about itself?
+After a recording session, an AI agent turns a lab's study folder into a BIDS
+dataset:
+
+- Patient names, record numbers and dates are found and hidden on your
+  computer before any AI sees the folder. The recordings never leave it.
+- The AI reads the lab notes, spreadsheets, recording headers and the paper,
+  and fills in the session details: amplifier, reference, filters, channel
+  types, bad channels, events, electrode positions and ethics approval.
+- It asks you only what it can't find, and flags what doesn't add up.
+- Once you approve, it writes the dataset and checks it with the official
+  BIDS validator.
+
+NWB output is next. The agent isn't in this repository yet. To try it on one
+of your studies, [book a call](https://calendly.com/jamessmu/call).
+
+## What's in this repository
+
+- Dataset grades (`validator/`, `reports/`): the public iEEG datasets on
+  OpenNeuro and DANDI, graded for what's missing.
+- An earlier cross-site benchmark (below): a data interface, tasks, a
+  submission contract and an evaluation runner.
+
+## Dataset grades
+
+All 77 public human iEEG datasets on OpenNeuro (67) and DANDI (10) have been
+graded under [`VALIDATOR-SPEC.md`](VALIDATOR-SPEC.md): 32 checks in six
+categories (identity, acquisition, channels, localization, subjects, labels),
+a weighted score and a letter grade. The grade answers one question: can
+someone who did not collect this data use it, and trust what it says about
+itself?
 
 - `validator/summary.json`: grades for every dataset, per-category scores, and
   the share of datasets failing each check
@@ -23,13 +46,14 @@ not collect this data use it, and trust what it says about itself?
 Grades refer to the spec version recorded in each report; checks and weights
 change only with a new spec version.
 
-## Benchmark
+## Earlier work: a cross-site benchmark
 
-Training data is provided to participating teams. Test data, including a
-whole recording site never seen in training, is held privately; brain-bench
-runs the evaluation and publishes the score.
+Before the data platform, we built a benchmark for iEEG models. Teams get
+training data; test data, including a whole recording site never seen in
+training, stays private, and brain-bench runs the evaluation and publishes
+the score. The code below still works.
 
-## The data interface
+### The data interface
 
 A model receives recordings as:
 
@@ -50,7 +74,7 @@ for rec in bb.recordings(split="train"):
         ...
 ```
 
-## Tasks
+### Tasks
 
 | Task | Classes | Window |
 |---|---|---|
@@ -61,7 +85,7 @@ for rec in bb.recordings(split="train"):
 Defined in `brainbench/submission.py`. A window is labeled only when fully
 inside one class.
 
-## Submitting
+### Submitting
 
 A submission is one Python file that defines `build()` returning a model
 implementing the contract in `brainbench/submission.py`:
@@ -96,7 +120,7 @@ in training). The cross-device number is the one that matters.
 `brainbench/benchmark.py` is the baseline (mean log band-power + logistic
 regression) and shows the contract in use. Results are in `results/`.
 
-## Sources
+### Sources
 
 Each benchmark release's `LICENSES.md` lists every source dataset with its
 license and citation. Released data uses openly licensed sources only
