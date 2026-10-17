@@ -9,7 +9,7 @@
 :root{--bg:#050506;--bg2:#0d0e11;--fg:#f3f3f1;--muted:#a3a3aa;--faint:#85858d;--line:rgba(255,255,255,.12);
 --line2:rgba(255,255,255,.24);--accent:#c4b7ff;--panel:#17132e;--phi:#ff9d9d;--ink:#111113;--taupe:#a99784;--gut:14px;--r:26px}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{margin:0;background:#fff;color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit}
@@ -53,8 +53,9 @@ footer.foot{padding:26px calc(var(--gut) + 16px) 40px;color:#77777e;font-size:14
 footer.foot a{text-decoration:none;margin-left:22px}
 footer.foot a:hover{color:var(--ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
-@media (max-width:720px){:root{--gut:8px;--r:18px}.nav-links a.hide-sm{display:none}.nav-links{gap:16px}.card{padding:80px 0}
-.rows li{font-size:17px}.wrap{padding:0 20px}.nav .bar{padding:0 16px}}
+@media (max-width:720px){:root{--gut:8px;--r:18px}.nav-links a.hide-sm{display:none}.nav-links{gap:16px}.card{padding:56px 0}
+.rows li{font-size:17px}.wrap{padding:0 20px}.nav .bar{padding:0 16px}
+footer.foot{flex-direction:column;gap:8px}footer.foot a{margin:0 20px 0 0}}
 
 .hero{padding:84px 0 30px;text-align:center;background:radial-gradient(55% 42% at 50% 74%,rgba(130,108,255,.16),transparent 72%),var(--bg)}
 .hero .eyebrow{justify-content:center}
@@ -79,7 +80,8 @@ transform:translate(-50%,-50%) rotateX(var(--rx)) rotateY(var(--ry)) translateX(
 .l-notes .tip{fill:#fff}
 .l-notes text{fill:#fff}
 .l-notes .src{fill:var(--accent)}
-@media (max-width:720px){.stack{--ry:22deg;--rx:6deg;height:clamp(230px,66vw,400px);margin-top:10px}.layer{width:72vw}}
+@media (max-width:720px){.hero{padding:52px 0 18px}.stack{--ry:22deg;--rx:6deg;height:clamp(230px,66vw,400px);margin-top:10px}.layer{width:72vw}
+.l-bids{--z:calc(-60px - 120px*var(--s));--x:calc(-12px - 28px*var(--s))}.l-notes{--z:calc(60px + 120px*var(--s));--x:calc(12px + 28px*var(--s))}}
 .section-head{max-width:760px}
 .trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
 .trio > div{border:1px solid var(--line);border-radius:18px;background:var(--bg2);overflow:hidden}
@@ -146,6 +148,7 @@ color:#d6d6da!important;font:12.5px ui-monospace,"SF Mono",Menlo,monospace;color
 .split .sticky{position:sticky;top:100px}
 .split h2{margin-top:18px}
 .diagram{display:block;width:100%;height:auto}
+.diagram.narrow{display:none;max-width:400px;margin:0 auto}
 .diagram .frame{fill:none;stroke:rgba(255,255,255,.55);stroke-width:1}
 .diagram .box{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.8);stroke-width:1}
 .diagram .hot{stroke:var(--accent)}
@@ -158,17 +161,23 @@ color:#d6d6da!important;font:12.5px ui-monospace,"SF Mono",Menlo,monospace;color
 .diagram .keep{fill:#fff}
 .diagram .violet{fill:var(--accent)}
 @media (max-width:900px){.split{grid-template-columns:1fr;gap:40px}.split .sticky{position:static}}
+@media (max-width:560px){.diagram{display:none}.diagram.narrow{display:block}}
 h2.wide{max-width:24ch}
 .offers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
 .offer{border:1px solid var(--line);border-radius:18px;background:var(--bg2);padding:26px 24px 24px;display:flex;flex-direction:column;gap:12px}
 .offer .aud{font:12px ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
-.offer h3{font-size:22px;letter-spacing:-.02em;margin:0}
+.offer h3{font-size:22px;line-height:1.25;letter-spacing:-.02em;margin:0}
 .offer p{margin:0;color:#cfcfd4;font-size:16px;line-height:1.5}
 .offer .price{font:14px ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;color:var(--accent);margin-top:auto;padding-top:10px}
 @media (max-width:900px){.offers{grid-template-columns:1fr}}
 .final h2{margin:0 auto 18px;max-width:16ch}
 .final .lede{max-width:44ch;margin:0 auto 34px}
-@media (max-width:720px){.grades-card{padding:90px 0;display:flex;flex-direction:column}.grades-inner{order:1}.tiles{order:2;position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:36px 16px 0}.tile{position:static;animation:none}.tile:nth-child(n+7){display:none}}
+@media (max-width:720px){.demo-step{padding:18px 16px 8px}.demo pre{font-size:11px;padding:10px 12px}.vid{margin-top:32px}.sub{margin-top:44px}
+.offer{padding:22px 20px 20px}.split .mock{margin-top:0}.mock td,.mock th{padding:12px;font-size:14px}}
+@media (max-width:560px){.demo thead{display:none}.demo table,.demo tbody,.demo tr,.demo td{display:block}
+.demo tr{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07)}.demo td{padding:0;border:0;overflow-wrap:anywhere}
+.demo td:first-child{font-size:12.5px;color:var(--muted)}.demo td:last-child{font-size:13px}.demo td:last-child::before{content:"from "}}
+@media (max-width:720px){.grades-card{padding:64px 0;display:flex;flex-direction:column}.grades-inner{order:1}.tiles{order:2;position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:36px 16px 0}.tile{position:static;animation:none}.tile:nth-child(n+7){display:none}}
 @media (prefers-reduced-motion:reduce){.tile{animation:none}.js .reveal span{opacity:1}}
 @media (prefers-reduced-motion:no-preference){
 .js .hero .wrap > *{opacity:0;transform:translateY(16px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
@@ -241,11 +250,11 @@ PT02,<mark class=phi>MRN-5518236</mark>,<mark class=phi>"Roe, Richard"</mark>,<m
 
 <div class=demo-step>
 <h3>2. What the AI is allowed to see</h3>
-<p>Names, record numbers and dates are found and hidden everywhere they appear, in every spelling we could find (30 for these two patients), before any AI sees the folder. We'd rather hide too much: here it even hid the column name "MRN". The AI never reads the signals, only channel names and which ones look flat or noisy.</p>
+<p>Names, record numbers and dates are found and hidden everywhere they appear, in every spelling we could find (30 for these two patients), before any AI sees the folder. The AI never reads the signals, only channel names and which ones look flat or noisy.</p>
 <pre>recordings/RUH_PT01_slowfast.edf
 recordings/RUH_PT02_slowfast.edf</pre>
 <pre>patients.csv
-Pt,<mark class=hid>[REDACTED]</mark>,Name,DOB,Age,Sex,Handed,Dx
+Pt,MRN,Name,DOB,Age,Sex,Handed,Dx
 PT01,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,44,F,right,focal epilepsy
 PT02,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,47,M,right,focal epilepsy</pre>
 <pre>Recording header (PT01)
@@ -351,6 +360,16 @@ sub-02/ieeg/...</pre>
 <rect class=box x='450' y='224' width='100' height='60' rx='10'/><text x='466' y='250'>AI</text><text x='466' y='270'>provider</text>
 <path class=wire d='M370,254 L370,336 L286,336'/>
 <rect class=box x='34' y='314' width='250' height='44' rx='10'/><text x='50' y='341'>request log (every call)</text>
+</svg><svg class='diagram narrow' viewBox='0 0 340 480' role=img aria-label='Recordings and patient details stay on your computer; redacted text goes to the AI provider, and every request is logged.'>
+<rect class=frame x='8' y='22' width='324' height='336' rx='18'/><text class=lbl x='26' y='50'>YOUR COMPUTER</text>
+<rect class='box stay' x='26' y='70' width='172' height='42' rx='10'/><text x='40' y='96'>recordings .edf</text><text class=keep x='212' y='96'>stay here</text>
+<rect class=box x='26' y='136' width='250' height='42' rx='10'/><text x='40' y='162'>notes, spreadsheets, headers</text>
+<path class=arrow d='M151,178 L151,198'/><path class=tip d='M151,206 l-5,-9 l10,0 z'/>
+<rect class='box hot' x='26' y='208' width='250' height='42' rx='10'/><text x='40' y='234'>hide PHI <tspan class=violet>(rules, no AI)</tspan></text>
+<rect class=box x='26' y='290' width='250' height='42' rx='10'/><text x='40' y='316'>request log (every call)</text>
+<path class=arrow d='M276,229 L300,229 L300,404'/><path class=tip d='M300,412 l-5,-9 l10,0 z'/><path class=wire d='M300,311 L276,311'/>
+<text x='290' y='392' text-anchor='end'>redacted text</text>
+<rect class=box x='240' y='414' width='92' height='56' rx='10'/><text x='254' y='438'>AI</text><text x='254' y='458'>provider</text>
 </svg></div>
 </div>
 </section>
