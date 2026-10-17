@@ -109,13 +109,22 @@ th button span{display:inline-block;margin-left:3px}
 .tip .bubble{position:absolute;left:0;bottom:calc(100% + 8px);width:330px;padding:13px 15px;border-radius:12px;background:#fff;color:#111;
 font-size:13px;line-height:1.5;opacity:0;visibility:hidden;z-index:20;pointer-events:none;box-shadow:0 20px 50px rgba(0,0,0,.5)}
 .tip:hover .bubble,.tip:focus .bubble{opacity:1;visibility:visible}
-.bubble b{display:block;font-weight:600;margin-bottom:4px}.bubble .why{display:block;color:#444}
-.bubble .ex{display:block;margin-top:6px}.bubble .pass{display:block;margin-top:6px;color:#777;font-size:12px}
-@media (max-width:600px){.bar{grid-template-columns:1fr 44px;gap:6px 12px}.bar .track{grid-column:1/-1;grid-row:2}.tip .bubble{width:260px}table{table-layout:fixed}th:first-child,td:first-child{width:44px}th:last-child,td.num{width:64px}}
+.bubble b,.sheet b{display:block;font-weight:600;margin-bottom:4px}.bubble .why,.sheet .why{display:block;color:#444}
+.bubble .ex,.sheet .ex{display:block;margin-top:6px}.bubble .pass,.sheet .pass{display:block;margin-top:6px;color:#777;font-size:12px}
+/* touch screens: explanations open in a sheet at the bottom of the screen instead of a hover bubble */
+.sheet{position:fixed;left:10px;right:10px;bottom:10px;z-index:40;padding:16px 18px 18px;border-radius:16px;background:#fff;color:#111;
+font-size:15px;line-height:1.5;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.sheet[hidden]{display:none}
+@media (hover:none){.tip .bubble{display:none}.tip,.miss span[title]{cursor:pointer}.tip::after{content:"";position:absolute;inset:-12px}}
+@media (max-width:600px){.ghead{padding:56px 0 44px}.bar{grid-template-columns:1fr 44px;gap:6px 12px}.bar .track{grid-column:1/-1;grid-row:2}.tip .bubble{width:260px}
+#ds,#ds thead,#ds tbody{display:block}#ds tr{display:grid;grid-template-columns:40px minmax(0,1fr) auto;column-gap:12px;align-items:start}
+#ds thead tr{border-bottom:1px solid var(--line2)}#ds th{border:0;padding:10px 0}#ds tbody tr{padding:14px 0;border-bottom:1px solid var(--line)}
+#ds td{padding:0;border:0}#ds td.ds{display:contents}#ds td:first-child{grid-row:1/span 2}#ds .ds > a{grid-column:2;grid-row:1}
+#ds .ds > .name{grid-column:2/4;grid-row:2}#ds .ds > .miss{grid-column:2/4;grid-row:3}#ds td.num{grid-column:3;grid-row:1;color:var(--muted)}.miss span{font-size:12px}}
 </style></head>
 <body>
 <a class=announce href='./#demo'>How we fill these gaps right after a session: <b>see the demo</b> ↗</a>
-<nav class=nav><div class=bar><a class=brand href='./'><svg viewBox='0 0 24 24' aria-hidden='true'><rect x='1.5' y='1.5' width='21' height='21' rx='6' fill='none' stroke='currentColor' stroke-width='1.6'/><polyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'/></svg><span>brain-bench</span></a><div class=nav-links><a class=hide-sm href='./#demo'>Demo</a><a class=hide-sm href='./#privacy'>Privacy</a><a class=hide-sm href='grades.html'>Grades</a><a class='pill ink' href='https://calendly.com/jamessmu/call'>Book a call</a><details class=menu><summary aria-label='Menu'><svg class=bars viewBox='0 0 24 24' aria-hidden='true'><path d='M4 9h16M4 15h16' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg><svg class=x viewBox='0 0 24 24' aria-hidden='true'><path d='M6 6l12 12M18 6 6 18' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg></summary><div class=menu-panel><a href='./#demo'>Demo</a><a href='./#privacy'>Privacy</a><a href='grades.html'>Grades</a></div></details></div></div></nav><script>document.querySelectorAll('.menu').forEach(function (m) {m.addEventListener('click', function (e) { if (e.target.closest('.menu-panel a')) m.open = false; });document.addEventListener('click', function (e) { if (!m.contains(e.target)) m.open = false; }); });</script>
+<nav class=nav><div class=bar><a class=brand href='./'><svg viewBox='0 0 24 24' aria-hidden='true'><rect x='1.5' y='1.5' width='21' height='21' rx='6' fill='none' stroke='currentColor' stroke-width='1.6'/><polyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'/></svg><span>brain-bench</span></a><div class=nav-links><a class=hide-sm href='./#demo'>Demo</a><a class=hide-sm href='./#privacy'>Privacy</a><a class=hide-sm href='grades.html'>Grades</a><a class='pill ink' href='https://calendly.com/jamessmu/call'>Book a call</a><details class=menu><summary aria-label='Menu'><svg class=bars viewBox='0 0 24 24' aria-hidden='true'><path d='M4 9h16M4 15h16' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg><svg class=x viewBox='0 0 24 24' aria-hidden='true'><path d='M6 6l12 12M18 6 6 18' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg></summary><div class=menu-panel><a href='./#demo'>Demo</a><a href='./#privacy'>Privacy</a><a href='grades.html'>Grades</a></div></details></div></div></nav><script>document.querySelectorAll('.menu').forEach(function (m) {m.addEventListener('click', function (e) { if (e.target.closest('.menu-panel a')) m.open = false; });document.addEventListener('pointerdown', function (e) { if (!m.contains(e.target)) m.open = false; }); });</script>
 <header class="card ghead">
 <div class=wrap>
 <p class=eyebrow>Dataset grades</p>
@@ -179,4 +188,24 @@ font-size:13px;line-height:1.5;opacity:0;visibility:hidden;z-index:20;pointer-ev
 </div>
 </section>
 <footer class=foot><span>brain-bench · Updated 2026-10-17. Each dataset keeps its original license.</span><span><a href='./'>Home</a><a href='grades.html'>Dataset grades</a><a href='https://github.com/jamesmu03/brain-bench'>GitHub</a></span></footer>
+<div class=sheet hidden aria-live=polite></div>
+<script>
+(function () {
+  if (!window.matchMedia("(hover: none)").matches) return;
+  var sheet = document.querySelector(".sheet"), current = null;
+  function hide() { sheet.hidden = true; current = null; }
+  function show(t) {
+    if (t.classList.contains("tip")) sheet.innerHTML = t.querySelector(".bubble").innerHTML;
+    else { var b = document.createElement("b"); b.textContent = t.textContent; sheet.replaceChildren(b, t.title); }
+    sheet.hidden = false;
+    current = t;
+  }
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest(".tip, .miss span[title]");
+    if (t) t === current ? hide() : show(t);
+  });
+  document.addEventListener("pointerdown", function (e) { if (current && !current.contains(e.target)) hide(); });
+  window.addEventListener("scroll", function () { if (current) hide(); }, { passive: true });
+})();
+</script>
 </body></html>
