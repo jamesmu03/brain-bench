@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>brain-bench — AI-native data management for neuroscience</title>
-<meta name="description" content="A data platform to speed up neuroscience research loops, starting with intracranial EEG.">
-<meta name="theme-color" content="#ffffff">
-<link rel=icon href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='1' y='1' width='22' height='22' rx='6' fill='%23050506'/%3E%3Cpolyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E"><meta property=og:title content="brain-bench: AI-native data management for neuroscience"><meta property=og:description content="A data platform to speed up neuroscience research loops, starting with intracranial EEG."><meta property=og:type content=website><meta property=og:url content="https://jamesmu03.github.io/brain-bench/"><meta property=og:image content="https://jamesmu03.github.io/brain-bench/demo-poster.png"><meta name=twitter:card content=summary_large_image>
+<meta name="description" content="Science at the speed of compute.">
+<meta name="theme-color" content="#050506">
+<link rel=icon href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='1' y='1' width='22' height='22' rx='6' fill='%23050506'/%3E%3Cpolyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E"><meta property=og:title content="brain-bench: AI-native data management for neuroscience"><meta property=og:description content="Science at the speed of compute."><meta property=og:type content=website><meta property=og:url content="https://jamesmu03.github.io/brain-bench/"><meta property=og:image content="https://jamesmu03.github.io/brain-bench/demo-poster.png"><meta name=twitter:card content=summary_large_image>
 <script>document.documentElement.classList.add("js")</script>
 <style>
 :root{--bg:#050506;--bg2:#0d0e11;--fg:#f3f3f1;--muted:#a3a3aa;--faint:#85858d;--line:rgba(255,255,255,.12);
@@ -17,9 +17,9 @@ img,video,svg{max-width:100%}
 .mono{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
 .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
 .announce{display:block;text-align:center;font:12.5px/1.4 ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;padding:10px 16px;
-color:#55555c;text-decoration:none;letter-spacing:.01em}
-.announce:hover{color:var(--ink)}
-.announce b{font-weight:500;color:var(--ink)}
+color:var(--muted);background:var(--bg);text-decoration:none;letter-spacing:.01em}
+.announce:hover{color:var(--fg)}
+.announce b{font-weight:500;color:var(--fg)}
 .nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px)}
 .nav .bar{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px;padding:0 calc(var(--gut) + 16px)}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em;text-decoration:none;font-size:16px;color:var(--ink)}
@@ -51,7 +51,6 @@ transparent calc(50% + 560px),rgba(255,255,255,.07) calc(50% + 560px),rgba(255,2
 .card > *{position:relative}
 .eyebrow{font:12.5px/1 ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;letter-spacing:.09em;text-transform:uppercase;
 color:var(--muted);display:flex;align-items:center;gap:9px;margin:0}
-.eyebrow::before{content:"";width:9px;height:9px;background:var(--accent);clip-path:polygon(0 0,100% 0,100% 100%);flex:none}
 h1,h2,h3{font-weight:500;letter-spacing:-.03em;margin:0}
 h1{font-size:clamp(44px,7.2vw,88px);line-height:1.0;letter-spacing:-.04em}
 h2{font-size:clamp(32px,4.4vw,54px);line-height:1.06;margin:18px 0 22px;max-width:18ch}
@@ -67,12 +66,15 @@ footer.foot a:hover{color:var(--ink)}
 @media (max-width:720px){:root{--gut:8px;--r:18px}.nav-links a.hide-sm{display:none}.menu{display:block}.nav-links{gap:16px}.card{padding:56px 0}
 .rows li{font-size:17px}.wrap{padding:0 20px}.nav .bar{padding:0 16px}
 footer.foot{flex-direction:column;gap:8px}footer.foot a{margin:0 20px 0 0}}
+.eyebrow::before{content:"";width:15px;height:15px;flex:none;background:var(--fg);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linejoin='round' stroke-linecap='round'%3E%3Crect x='1.5' y='1.5' width='21' height='21' rx='6'/%3E%3Cpolyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linejoin='round' stroke-linecap='round'%3E%3Crect x='1.5' y='1.5' width='21' height='21' rx='6'/%3E%3Cpolyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14'/%3E%3C/svg%3E") center/contain no-repeat}
 
 .hero{padding:84px 0 30px;text-align:center;background:radial-gradient(55% 42% at 50% 74%,rgba(130,108,255,.16),transparent 72%),var(--bg)}
 .hero .eyebrow{justify-content:center}
 .hero h1{max-width:15ch;margin:24px auto 26px}
 .hero .lede{max-width:46ch;margin:0 auto}
 .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+/* the drawings are pictures: their labels can't be selected or long-pressed */
+.stack,.trio svg,.diagram,.tiles{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 .stack{position:relative;height:clamp(300px,52vw,620px);margin:24px auto 0;perspective:2200px;perspective-origin:50% 30%;
 --ry:38deg;--rx:8deg;--s:.2}
 .layer{position:absolute;left:50%;top:50%;width:min(780px,78vw);aspect-ratio:1000/560;border-radius:20px;
@@ -105,35 +107,6 @@ transform:translate(-50%,-50%) rotateX(var(--rx)) rotateY(var(--ry)) translateX(
 .trio .wire{stroke:rgba(255,255,255,.6);stroke-dasharray:3 4;fill:none}
 .trio .tip{fill:#fff}
 @media (max-width:900px){.trio{grid-template-columns:1fr}}
-.vid{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:#0e0f12;margin-top:44px}
-.sub{margin:64px 0 0;font-size:22px}
-.demo{border:1px solid var(--line);border-radius:16px;margin:18px 0 0;background:var(--bg2)}
-.demo-top{display:none;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
-.demo.js .demo-top{display:flex}
-.demo-top button{font:inherit;color:var(--fg);background:transparent;border:1px solid var(--line2);border-radius:999px;padding:5px 14px;margin-left:6px;cursor:pointer}
-.demo-top button:disabled{color:var(--faint);border-color:var(--line);cursor:default}
-.demo-step{padding:22px 24px 10px}
-.demo.js .demo-step{min-height:380px}
-.demo-step h3{margin:0 0 10px}
-.demo-step p,.demo-step li{font-size:15.5px;color:#cfcfd4}
-.demo-step ul{margin:0 0 14px;padding-left:20px}
-.demo pre{font:12.5px/1.6 ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;background:#07080a;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 14px;overflow-x:auto;color:#d6d6da}
-.demo table{width:100%;border-collapse:collapse;margin:0 0 14px}
-.demo th{font-weight:500;color:var(--muted);text-align:left;font-size:13px;padding:8px 12px 8px 0;border-bottom:1px solid var(--line)}
-.demo td{font-size:14px;padding:9px 12px 9px 0;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:top;color:#dcdce0}
-.demo td:last-child{color:var(--muted)}
-mark.phi{background:rgba(255,99,99,.18);color:var(--phi);border-radius:3px;padding:0 2px}
-mark.hid{background:rgba(255,255,255,.1);color:#b4b4ba;border-radius:3px;padding:0 2px}
-.qa{list-style:none;padding:0!important}
-.qa li{margin:0 0 12px}
-.qa span{display:block;color:var(--muted)}
-.card.statement{background:radial-gradient(90% 140% at 0% 0%,#2a2263,var(--panel) 62%)}
-.card.statement::before{display:none}
-.panel .eyebrow{color:rgba(255,255,255,.65);margin-bottom:28px}
-.reveal{font-size:clamp(30px,4.8vw,62px);line-height:1.08;letter-spacing:-.035em;margin:0;max-width:19ch}
-.js .reveal span{opacity:.18;transition:opacity .35s ease}
-.js .reveal span.on{opacity:1}
-.panel-note{color:rgba(255,255,255,.66);margin:28px 0 0;font-size:17px;max-width:46ch}
 .mock{border:1px solid var(--line);border-radius:16px;background:var(--bg2);margin-top:34px;overflow:hidden}
 .mock-top{display:flex;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);font:12.5px ui-monospace,"SF Mono",Menlo,monospace;color:var(--muted);letter-spacing:.04em}
 .mock table{width:100%;border-collapse:collapse}
@@ -151,8 +124,7 @@ mark.hid{background:rgba(255,255,255,.1);color:#b4b4ba;border-radius:3px;padding
 .tiles{position:absolute;inset:0;z-index:1;pointer-events:none}
 .tile{position:absolute;display:flex;align-items:center;gap:10px;padding:9px 13px 9px 9px;border-radius:14px;background:#15161a;border:1px solid rgba(255,255,255,.1);
 color:#d6d6da!important;font:12.5px ui-monospace,"SF Mono",Menlo,monospace;color:#3a3a3f;animation:float 8s ease-in-out infinite}
-.tile b{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;font:600 14px/1 -apple-system,BlinkMacSystemFont,sans-serif;color:#fff}
-.gA{background:#7b6cf6}.gB{background:#3f74b5}.gC{background:#8d857c}.gD{background:#d08a2e}.gF{background:#c0473d}
+.tile b{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;font:600 14px/1 -apple-system,BlinkMacSystemFont,sans-serif;color:#111113}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .final{text-align:center}
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:start}
@@ -181,15 +153,18 @@ h2.wide{max-width:24ch}
 .offer p{margin:0;color:#cfcfd4;font-size:16px;line-height:1.5}
 .offer .price{font:14px ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;color:var(--accent);margin-top:auto;padding-top:10px}
 @media (max-width:900px){.offers{grid-template-columns:1fr}}
+.pillars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}
+.pillar{border:1px solid var(--line);border-radius:18px;background:var(--bg2);padding:30px 28px 28px;display:flex;flex-direction:column}
+.pillar .num{font:12.5px ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;letter-spacing:.08em;color:var(--muted);margin:0 0 18px}
+.pillar h3{font-size:26px;line-height:1.2;letter-spacing:-.02em;margin:0 0 18px}
+.pillar ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pillar li{padding:14px 0;border-bottom:1px solid var(--line);color:#dadadd;font-size:16.5px;line-height:1.5}
+@media (max-width:900px){.pillars{grid-template-columns:1fr}}
 .final h2{margin:0 auto 18px;max-width:16ch}
 .final .lede{max-width:44ch;margin:0 auto 34px}
-@media (max-width:720px){.demo-step{padding:18px 16px 8px}.demo pre{font-size:11px;padding:10px 12px}.vid{margin-top:32px}.sub{margin-top:44px}
-.offer{padding:22px 20px 20px}.split .mock{margin-top:0}.mock td,.mock th{padding:12px;font-size:14px}}
-@media (max-width:560px){.demo thead{display:none}.demo table,.demo tbody,.demo tr,.demo td{display:block}
-.demo tr{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07)}.demo td{padding:0;border:0;overflow-wrap:anywhere}
-.demo td:first-child{font-size:12.5px;color:var(--muted)}.demo td:last-child{font-size:13px}.demo td:last-child::before{content:"from "}}
+@media (max-width:720px){.offer{padding:22px 20px 20px}.pillar{padding:24px 20px 22px}.pillar h3{font-size:23px}.split .mock{margin-top:0}.mock td,.mock th{padding:12px;font-size:14px}}
 @media (max-width:720px){.grades-card{padding:64px 0;display:flex;flex-direction:column}.grades-inner{order:1}.tiles{order:2;position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:36px 16px 0}.tile{position:static;animation:none}.tile:nth-child(n+7){display:none}}
-@media (prefers-reduced-motion:reduce){.tile{animation:none}.js .reveal span{opacity:1}}
+@media (prefers-reduced-motion:reduce){.tile{animation:none}}
 @media (prefers-reduced-motion:no-preference){
 .js .hero .wrap > *{opacity:0;transform:translateY(16px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
 .js .hero .wrap > :nth-child(2){animation-delay:.07s}.js .hero .wrap > :nth-child(3){animation-delay:.14s}
@@ -204,16 +179,16 @@ h2.wide{max-width:24ch}
 .shown .hero .wrap > *,.shown .fade{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}
 .shown .stack .layer{opacity:1!important;animation:none!important}
 @keyframes appear{to{opacity:1}}
-</style></head>
+.gA{background:#4a8cf7}.gB{background:#93c2f5}.gC{background:#e6c449}.gD{background:#f08a3a}.gF{background:#e5484d}</style></head>
 <body>
 <a class=announce href='grades.html'>We graded all 77 iEEG datasets on OpenNeuro and DANDI. <b>See the grades</b> ↗</a>
-<nav class=nav><div class=bar><a class=brand href='./'><svg viewBox='0 0 24 24' aria-hidden='true'><rect x='1.5' y='1.5' width='21' height='21' rx='6' fill='none' stroke='currentColor' stroke-width='1.6'/><polyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'/></svg><span>brain-bench</span></a><div class=nav-links><a class=hide-sm href='#demo'>Demo</a><a class=hide-sm href='#privacy'>Privacy</a><a class=hide-sm href='grades.html'>Grades</a><a class='pill ink' href='https://calendly.com/jamessmu/call'>Book a call</a><details class=menu><summary aria-label='Menu'><svg class=bars viewBox='0 0 24 24' aria-hidden='true'><path d='M4 9h16M4 15h16' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg><svg class=x viewBox='0 0 24 24' aria-hidden='true'><path d='M6 6l12 12M18 6 6 18' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg></summary><div class=menu-panel><a href='#demo'>Demo</a><a href='#privacy'>Privacy</a><a href='grades.html'>Grades</a></div></details></div></div></nav><script>document.querySelectorAll('.menu').forEach(function (m) {m.addEventListener('click', function (e) { if (e.target.closest('.menu-panel a')) m.open = false; });document.addEventListener('pointerdown', function (e) { if (!m.contains(e.target)) m.open = false; }); });</script>
+<nav class=nav><div class=bar><a class=brand href='./'><svg viewBox='0 0 24 24' aria-hidden='true'><rect x='1.5' y='1.5' width='21' height='21' rx='6' fill='none' stroke='currentColor' stroke-width='1.6'/><polyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'/></svg><span>brain-bench</span></a><div class=nav-links><a class=hide-sm href='#demo'>How it works</a><a class=hide-sm href='#privacy'>Privacy</a><a class=hide-sm href='grades.html'>Grades</a><a class='pill ink' href='https://calendly.com/jamessmu/call'>Book a call</a><details class=menu><summary aria-label='Menu'><svg class=bars viewBox='0 0 24 24' aria-hidden='true'><path d='M4 9h16M4 15h16' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg><svg class=x viewBox='0 0 24 24' aria-hidden='true'><path d='M6 6l12 12M18 6 6 18' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg></summary><div class=menu-panel><a href='#demo'>How it works</a><a href='#privacy'>Privacy</a><a href='grades.html'>Grades</a></div></details></div></div></nav><script>document.querySelectorAll('.menu').forEach(function (m) {m.addEventListener('click', function (e) { if (e.target.closest('.menu-panel a')) m.open = false; });document.addEventListener('pointerdown', function (e) { if (!m.contains(e.target)) m.open = false; }); });</script>
 
 <header class="card hero">
 <div class=wrap>
 <h1>AI-native data management for neuroscience</h1>
-<p class=lede>We're building a data platform to speed up neuroscience research loops. We're starting with intracranial EEG labs that need to share their data under NIH's data sharing policy.</p>
-<div class=ctas><a class=pill href="https://calendly.com/jamessmu/call">Book a call</a><a class="pill ghost" href="#demo">Watch the demo</a></div>
+<p class=lede>Science at the speed of compute.</p>
+<div class=ctas><a class=pill href="https://calendly.com/jamessmu/call">Book a call</a><a class="pill ghost" href="#demo">How it works</a></div>
 </div>
 <div class=stack aria-hidden=true>
 <div class="layer l-bids"><svg viewBox='0 0 1000 560' preserveAspectRatio='none'><text x='36' y='70'>bids/</text><text x='36' y='110'>├─ dataset_description.json</text><text x='36' y='150'>├─ participants.tsv</text><text x='36' y='190'>├─ provenance.json</text><text x='36' y='230'>└─ sub-01/ieeg/</text><text x='36' y='270'>   ├─ sub-01_task-SlowFast_ieeg.edf</text><text x='36' y='310'>   ├─ sub-01_task-SlowFast_channels.tsv</text><text x='36' y='350'>   ├─ sub-01_task-SlowFast_events.tsv</text><text x='36' y='390'>   └─ sub-01_space-ACPC_electrodes.tsv</text><text x='36' y='506' class=ok>BIDS validator: 0 errors</text></svg></div>
@@ -225,127 +200,14 @@ h2.wide{max-width:24ch}
 <section class=card id=demo>
 <div class=wrap>
 <div class='section-head fade'>
-<p class=eyebrow>Demo</p>
-<h2>After a recording session</h2>
+<p class=eyebrow>How it works</p>
+<h2>After recording neurodata</h2>
 </div>
 <div class='trio fade'>
-<div><svg viewBox='0 0 320 150' aria-hidden=true><polyline class=tr points='16.0,85.2 17.2,84.0 18.3,84.0 19.5,85.8 20.6,86.8 21.8,84.3 22.9,83.5 24.1,79.8 25.3,85.8 26.4,83.2 27.6,80.0 28.7,81.1 29.9,84.1 31.0,86.6 32.2,82.4 33.3,84.5 34.5,82.8 35.7,81.3 36.8,82.6 38.0,85.1 39.1,84.8 40.3,84.6 41.4,83.8 42.6,84.4 43.8,85.4 44.9,85.3 46.1,83.3 47.2,86.3 48.4,86.0 49.5,83.4 50.7,84.2 51.9,82.2 53.0,80.8 54.2,84.4 55.3,82.5 56.5,81.8 57.6,83.1 58.8,84.4 60.0,88.6 61.1,85.1 62.3,82.8 63.4,81.8 64.6,82.6 65.7,85.4 66.9,88.8 68.0,86.4 69.2,85.8 70.4,84.8 71.5,84.9 72.7,89.2 73.8,85.4 75.0,83.5 76.1,86.1 77.3,82.6 78.5,83.9 79.6,85.7 80.8,84.6 81.9,84.0 83.1,80.4 84.2,80.4 85.4,80.8 86.6,81.5 87.7,82.9 88.9,84.2 90.0,81.8 91.2,82.6 92.3,81.6 93.5,84.2 94.7,85.5 95.8,87.6 97.0,84.7 98.1,86.9 99.3,83.1 100.4,82.8 101.6,84.7 102.7,82.2 103.9,83.8 105.1,81.9 106.2,85.5 107.4,83.2 108.5,84.7 109.7,82.2 110.8,83.4 112.0,81.3 113.2,79.4 114.3,80.9 115.5,81.2 116.6,80.4 117.8,82.4 118.9,85.9 120.1,86.8 121.3,85.1 122.4,82.7 123.6,84.3 124.7,82.4 125.9,83.4 127.0,81.4 128.2,83.8 129.3,84.7 130.5,82.5 131.7,83.7 132.8,85.8 134.0,87.2 135.1,85.4 136.3,83.5 137.4,84.4 138.6,83.6 139.8,83.7 140.9,84.6 142.1,85.8 143.2,85.5 144.4,85.3 145.5,85.2 146.7,86.9 147.9,83.5 149.0,83.5 150.2,82.4 151.3,83.6 152.5,85.5 153.6,86.1 154.8,85.8 156.0,86.2 157.1,84.1 158.3,82.2 159.4,82.9'/><polyline class=tr points='16.0,113.9 17.2,113.9 18.3,113.9 19.5,113.9 20.6,113.9 21.8,113.9 22.9,113.9 24.1,113.9 25.3,113.9 26.4,113.9 27.6,113.9 28.7,113.9 29.9,113.9 31.0,113.9 32.2,113.9 33.3,113.9 34.5,113.9 35.7,113.9 36.8,113.9 38.0,113.9 39.1,113.9 40.3,113.9 41.4,113.9 42.6,113.9 43.8,113.9 44.9,113.9 46.1,113.9 47.2,113.9 48.4,113.9 49.5,113.9 50.7,113.9 51.9,113.9 53.0,113.9 54.2,113.9 55.3,113.9 56.5,113.9 57.6,113.9 58.8,113.9 60.0,113.9 61.1,113.9 62.3,113.9 63.4,113.9 64.6,113.9 65.7,113.9 66.9,113.9 68.0,113.9 69.2,113.9 70.4,113.9 71.5,113.9 72.7,113.9 73.8,113.9 75.0,113.9 76.1,113.9 77.3,113.9 78.5,113.9 79.6,113.9 80.8,113.9 81.9,113.9 83.1,113.9 84.2,113.9 85.4,113.9 86.6,113.9 87.7,113.9 88.9,113.9 90.0,113.9 91.2,113.9 92.3,113.9 93.5,113.9 94.7,113.9 95.8,113.9 97.0,113.9 98.1,113.9 99.3,113.9 100.4,113.9 101.6,113.9 102.7,113.9 103.9,113.9 105.1,113.9 106.2,113.9 107.4,113.9 108.5,113.9 109.7,113.9 110.8,113.9 112.0,113.9 113.2,113.9 114.3,113.9 115.5,113.9 116.6,113.9 117.8,113.9 118.9,113.9 120.1,113.9 121.3,113.9 122.4,113.9 123.6,113.9 124.7,113.9 125.9,113.9 127.0,113.9 128.2,113.9 129.3,113.9 130.5,113.9 131.7,113.9 132.8,113.9 134.0,113.9 135.1,113.9 136.3,113.9 137.4,113.9 138.6,113.9 139.8,113.9 140.9,113.9 142.1,113.9 143.2,113.9 144.4,113.9 145.5,113.9 146.7,113.9 147.9,113.9 149.0,113.9 150.2,113.9 151.3,113.9 152.5,113.9 153.6,113.9 154.8,113.9 156.0,113.9 157.1,113.9 158.3,113.9 159.4,113.9'/><rect class=box x='16' y='10' width='190' height='24' rx='7'/><text x='26' y='26'>Natus Quantum <tspan class=acc>notes.txt</tspan></text><rect class=box x='16' y='40' width='126' height='24' rx='7'/><text x='26' y='56'>1000 Hz <tspan class=acc>header</tspan></text><rect class=box x='170' y='120' width='134' height='24' rx='7'/><text x='180' y='136'>LA6 flat → bad</text><path class=wire d='M170,132 L104,114'/><path class=tip d='M98,112 l9,-2 l-3,8 z'/></svg><p>AI extracts session details such as the amplifier, sampling rate and bad channels.</p></div>
-<div><svg viewBox='0 0 320 150' aria-hidden=true><text x='16' y='30' class=dim>[agent asks]</text><text x='16' y='50'>Power line frequency at the</text><text x='16' y='68'>recording site, 50 or 60 Hz?</text><text x='16' y='100' class=dim>[your answer]</text><text x='16' y='120' class=acc>60 Hz.</text></svg><p>AI asks you questions about context before you forget.</p></div>
-<div><svg viewBox='0 0 320 150' aria-hidden=true><text x='16' y='28'>bids/</text><text x='16' y='48'>├─ dataset_description.json</text><text x='16' y='68'>├─ participants.tsv</text><text x='16' y='88'>└─ sub-01/ieeg/…_ieeg.edf</text><text x='16' y='126' class=ok>BIDS validator: 0 errors</text></svg><p>Convert your dataset to BIDS in one click. NWB is next.</p></div>
+<div><svg viewBox='0 0 320 150' aria-hidden=true><polyline class=tr points='16.0,85.2 17.2,84.0 18.3,84.0 19.5,85.8 20.6,86.8 21.8,84.3 22.9,83.5 24.1,79.8 25.3,85.8 26.4,83.2 27.6,80.0 28.7,81.1 29.9,84.1 31.0,86.6 32.2,82.4 33.3,84.5 34.5,82.8 35.7,81.3 36.8,82.6 38.0,85.1 39.1,84.8 40.3,84.6 41.4,83.8 42.6,84.4 43.8,85.4 44.9,85.3 46.1,83.3 47.2,86.3 48.4,86.0 49.5,83.4 50.7,84.2 51.9,82.2 53.0,80.8 54.2,84.4 55.3,82.5 56.5,81.8 57.6,83.1 58.8,84.4 60.0,88.6 61.1,85.1 62.3,82.8 63.4,81.8 64.6,82.6 65.7,85.4 66.9,88.8 68.0,86.4 69.2,85.8 70.4,84.8 71.5,84.9 72.7,89.2 73.8,85.4 75.0,83.5 76.1,86.1 77.3,82.6 78.5,83.9 79.6,85.7 80.8,84.6 81.9,84.0 83.1,80.4 84.2,80.4 85.4,80.8 86.6,81.5 87.7,82.9 88.9,84.2 90.0,81.8 91.2,82.6 92.3,81.6 93.5,84.2 94.7,85.5 95.8,87.6 97.0,84.7 98.1,86.9 99.3,83.1 100.4,82.8 101.6,84.7 102.7,82.2 103.9,83.8 105.1,81.9 106.2,85.5 107.4,83.2 108.5,84.7 109.7,82.2 110.8,83.4 112.0,81.3 113.2,79.4 114.3,80.9 115.5,81.2 116.6,80.4 117.8,82.4 118.9,85.9 120.1,86.8 121.3,85.1 122.4,82.7 123.6,84.3 124.7,82.4 125.9,83.4 127.0,81.4 128.2,83.8 129.3,84.7 130.5,82.5 131.7,83.7 132.8,85.8 134.0,87.2 135.1,85.4 136.3,83.5 137.4,84.4 138.6,83.6 139.8,83.7 140.9,84.6 142.1,85.8 143.2,85.5 144.4,85.3 145.5,85.2 146.7,86.9 147.9,83.5 149.0,83.5 150.2,82.4 151.3,83.6 152.5,85.5 153.6,86.1 154.8,85.8 156.0,86.2 157.1,84.1 158.3,82.2 159.4,82.9'/><polyline class=tr points='16.0,113.9 17.2,113.9 18.3,113.9 19.5,113.9 20.6,113.9 21.8,113.9 22.9,113.9 24.1,113.9 25.3,113.9 26.4,113.9 27.6,113.9 28.7,113.9 29.9,113.9 31.0,113.9 32.2,113.9 33.3,113.9 34.5,113.9 35.7,113.9 36.8,113.9 38.0,113.9 39.1,113.9 40.3,113.9 41.4,113.9 42.6,113.9 43.8,113.9 44.9,113.9 46.1,113.9 47.2,113.9 48.4,113.9 49.5,113.9 50.7,113.9 51.9,113.9 53.0,113.9 54.2,113.9 55.3,113.9 56.5,113.9 57.6,113.9 58.8,113.9 60.0,113.9 61.1,113.9 62.3,113.9 63.4,113.9 64.6,113.9 65.7,113.9 66.9,113.9 68.0,113.9 69.2,113.9 70.4,113.9 71.5,113.9 72.7,113.9 73.8,113.9 75.0,113.9 76.1,113.9 77.3,113.9 78.5,113.9 79.6,113.9 80.8,113.9 81.9,113.9 83.1,113.9 84.2,113.9 85.4,113.9 86.6,113.9 87.7,113.9 88.9,113.9 90.0,113.9 91.2,113.9 92.3,113.9 93.5,113.9 94.7,113.9 95.8,113.9 97.0,113.9 98.1,113.9 99.3,113.9 100.4,113.9 101.6,113.9 102.7,113.9 103.9,113.9 105.1,113.9 106.2,113.9 107.4,113.9 108.5,113.9 109.7,113.9 110.8,113.9 112.0,113.9 113.2,113.9 114.3,113.9 115.5,113.9 116.6,113.9 117.8,113.9 118.9,113.9 120.1,113.9 121.3,113.9 122.4,113.9 123.6,113.9 124.7,113.9 125.9,113.9 127.0,113.9 128.2,113.9 129.3,113.9 130.5,113.9 131.7,113.9 132.8,113.9 134.0,113.9 135.1,113.9 136.3,113.9 137.4,113.9 138.6,113.9 139.8,113.9 140.9,113.9 142.1,113.9 143.2,113.9 144.4,113.9 145.5,113.9 146.7,113.9 147.9,113.9 149.0,113.9 150.2,113.9 151.3,113.9 152.5,113.9 153.6,113.9 154.8,113.9 156.0,113.9 157.1,113.9 158.3,113.9 159.4,113.9'/><rect class=box x='16' y='10' width='190' height='24' rx='7'/><text x='26' y='26'>Natus Quantum <tspan class=acc>notes.txt</tspan></text><rect class=box x='16' y='40' width='126' height='24' rx='7'/><text x='26' y='56'>1000 Hz <tspan class=acc>header</tspan></text><rect class=box x='170' y='120' width='134' height='24' rx='7'/><text x='180' y='136'>LA6 flat → bad</text><path class=wire d='M170,132 L104,114'/><path class=tip d='M98,112 l9,-2 l-3,8 z'/></svg><p>AI extracts session details from the raw data.</p></div>
+<div><svg viewBox='0 0 320 150' aria-hidden=true><text x='16' y='30' class=dim>[agent asks]</text><text x='16' y='50'>Power line frequency at the</text><text x='16' y='68'>recording site, 50 or 60 Hz?</text><text x='16' y='100' class=dim>[your answer]</text><text x='16' y='120' class=acc>60 Hz.</text></svg><p>AI asks you context questions.</p></div>
+<div><svg viewBox='0 0 320 150' aria-hidden=true><text x='16' y='28'>bids/</text><text x='16' y='48'>├─ dataset_description.json</text><text x='16' y='68'>├─ participants.tsv</text><text x='16' y='88'>└─ sub-01/ieeg/…_ieeg.edf</text><text x='16' y='126' class=ok>BIDS validator: 0 errors</text></svg><p>You get easy data conversion to standardized formats in one click.</p></div>
 </div>
-<video class=vid src="demo.mp4" poster="demo-poster.png" width=1000 height=780 controls muted playsinline preload=metadata></video>
-<p class=cap>A test folder with made-up patients. Shortened, and the AI step is replayed from a recorded run.</p>
-<h3 class=sub>The same run, step by step</h3>
-
-<div class=demo aria-live=polite>
-<div class=demo-top><span>Step <b>1</b> of 6</span><span><button type=button data-go=-1>Back</button><button type=button data-go=1>Next</button></span></div>
-
-<div class=demo-step>
-<h3>1. The folder as it arrived</h3>
-<p>Two patients' recordings, a lab notebook, a patient spreadsheet, behaviour files and electrode coordinates, plus quotes from the paper. Patient details are in the spreadsheet, the file names and the recording headers.</p>
-<pre>recordings/RUH_PT01_<mark class=phi>2021-03-04</mark>_slowfast.edf
-recordings/RUH_PT02_<mark class=phi>2021-03-05</mark>_slowfast.edf
-behaviour/PT01_slowfast_behaviour.csv
-behaviour/PT02_slowfast_behaviour.csv
-localization/PT01_contacts.csv
-localization/PT02_contacts.csv
-notes.txt
-patients.csv</pre>
-<pre>patients.csv
-Pt,MRN,Name,DOB,Age,Sex,Handed,Dx
-PT01,<mark class=phi>MRN-4471902</mark>,<mark class=phi>"Doe, Jane"</mark>,<mark class=phi>03/14/1977</mark>,44,F,right,focal epilepsy
-PT02,<mark class=phi>MRN-5518236</mark>,<mark class=phi>"Roe, Richard"</mark>,<mark class=phi>11/02/1974</mark>,47,M,right,focal epilepsy</pre>
-<pre>Recording header (PT01)
-<mark class=phi>MRN-4471902</mark> F <mark class=phi>14-MAR-1977</mark> <mark class=phi>DOE_JANE</mark>  Startdate <mark class=phi>04-MAR-2021</mark></pre>
-</div>
-
-<div class=demo-step>
-<h3>2. What the AI is allowed to see</h3>
-<p>Names, record numbers and dates are found and hidden everywhere they appear, in every spelling we could find (30 for these two patients), before any AI sees the folder. The AI never reads the signals, only channel names and which ones look flat or noisy.</p>
-<pre>recordings/RUH_PT01_slowfast.edf
-recordings/RUH_PT02_slowfast.edf</pre>
-<pre>patients.csv
-Pt,MRN,Name,DOB,Age,Sex,Handed,Dx
-PT01,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,44,F,right,focal epilepsy
-PT02,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,<mark class=hid>[REDACTED]</mark>,47,M,right,focal epilepsy</pre>
-<pre>Recording header (PT01)
-patient fields: withheld (removed when the dataset is written)</pre>
-</div>
-
-<div class=demo-step>
-<h3>3. What it filled in, and where each value came from</h3>
-<table>
-<thead><tr><th>Detail</th><th>Value</th><th>Source</th></tr></thead>
-<tbody>
-<tr><td>Sampling rate</td><td>1000 Hz</td><td>recording header</td></tr>
-<tr><td>Amplifier</td><td>Natus Quantum</td><td>notes.txt</td></tr>
-<tr><td>Reference</td><td>White-matter contact chosen by the clinical team</td><td>notes.txt</td></tr>
-<tr><td>Hardware filter</td><td>0.1 Hz high-pass</td><td>notes.txt</td></tr>
-<tr><td>Task</td><td>Forced two-choice reaction time</td><td>notes.txt</td></tr>
-<tr><td>Channel types</td><td>Depth contacts as sEEG, photodiode as trigger, EKG1 as ECG, C3/C4 as scalp EEG</td><td>notes.txt</td></tr>
-<tr><td>Bad channels</td><td>LA6 in patient 01, LA7 in patient 02 (both flat)</td><td>signal check</td></tr>
-<tr><td>Participants</td><td>01: 44, F, right-handed, focal epilepsy<br>02: 47, M, right-handed, focal epilepsy</td><td>patients.csv</td></tr>
-<tr><td>Events</td><td>192 events: Fixation, Go Cue, Response, Inter-Stimulus Interval</td><td>behaviour files</td></tr>
-<tr><td>Electrodes</td><td>76 contact positions, ACPC space, mm</td><td>localization files</td></tr>
-<tr><td>Ethics approval</td><td>Riverside University Hospital IRB, STUDY00019342</td><td>the paper</td></tr>
-<tr><td>Paper link</td><td>doi.org/10.1000/example.2023.001</td><td>the paper</td></tr>
-</tbody>
-</table>
-</div>
-
-<div class=demo-step>
-<h3>4. What it asked</h3>
-<p>Only what it couldn't find in the files or the paper. In this test, another AI model played the researcher.</p>
-<ul class=qa>
-<li>What licence should the dataset be released under? Your notes say "ask Nicole about the licence".<span>CC0.</span></li>
-<li>Dataset name and author list, in order?<span>"sEEG Forced Two-Choice Task". Alexandra Rook, Bruno Stedman, Nicole Swan.</span></li>
-<li>Power line frequency at the recording site, 50 or 60 Hz?<span>60 Hz.</span></li>
-<li>Where was the ground electrode placed?<span>Don't know.</span></li>
-<li>Electrode manufacturer?<span>Don't know.</span></li>
-<li>The paper reports four patients, but the folder only has PT01 and PT02. Should the other two be added?<span>Don't know. Nicole would be the one to ask.</span></li>
-</ul>
-</div>
-
-<div class=demo-step>
-<h3>5. What it flagged for you to check</h3>
-<ul>
-<li>The paper reports four patients, but the folder only has two.</li>
-<li>Many contact coordinates look wrong. Left-side contacts have positive X values, such as PT01 LA2 at X = 25.44, and contacts on one electrode jump around instead of following a line.</li>
-<li>The ground electrode and electrode manufacturer are still unknown, so they're left as n/a.</li>
-<li>Event times weren't checked against the photodiode signal.</li>
-</ul>
-</div>
-
-<div class=demo-step>
-<h3>6. The result</h3>
-<p>After you approve, the dataset is written in BIDS. The original files are never changed.</p>
-<pre>dataset_description.json
-participants.tsv
-provenance.json     where every value came from
-sub-01/ieeg/sub-01_task-SlowFast_ieeg.edf
-sub-01/ieeg/sub-01_task-SlowFast_channels.tsv
-sub-01/ieeg/sub-01_task-SlowFast_events.tsv
-sub-01/ieeg/sub-01_space-ACPC_electrodes.tsv
-sub-02/ieeg/...</pre>
-<ul>
-<li>Official BIDS validator: 0 errors (34 warnings, all about recommended fields left empty).</li>
-<li>Our grade: A (0.94). Two checks fail: no DOI yet (you get one when you publish), and no electrode positions in a standard template space like MNI.</li>
-<li>The grade checks that details are there, not that they're right. The coordinates flagged in step 5 still need a person to look at them.</li>
-<li>Compared with the test folder's answer key: all 12 dataset fields, 84 channels, 192 events and 76 electrode positions match the lab's files, odd coordinates included. It flagged them and left them alone.</li>
-<li>Patient details in the dataset or in anything sent to the AI: none.</li>
-<li>AI cost for the whole run: $0.33.</li>
-</ul>
-</div>
-</div>
-
-</div>
-</section>
-
-<section class="card statement">
-<div class=wrap>
-<p class=eyebrow>In the demo folder</p>
-<p class=reveal><span>We</span> <span>hid</span> <span>two</span> <span>patients&#x27;</span> <span>names,</span> <span>record</span> <span>numbers</span> <span>and</span> <span>birth</span> <span>dates,</span> <span>in</span> <span>30</span> <span>different</span> <span>spellings,</span> <span>before</span> <span>the</span> <span>AI</span> <span>saw</span> <span>anything.</span></p>
-<p class=panel-note>This step runs on your computer and uses rules, not AI.</p>
 </div>
 </section>
 
@@ -355,33 +217,30 @@ sub-02/ieeg/...</pre>
 <p class=eyebrow>Privacy</p>
 <h2>What leaves your computer</h2>
 <ul class=rows>
-<li>We find and hide patient names, record numbers and dates on your computer before any AI sees your data.</li>
-<li>The AI provider gets the file names, notes, spreadsheets and recording headers, minus those details. The recordings themselves never leave your computer.</li>
-<li>You'll be able to pick the AI provider and use your own API key.</li>
-<li>While the AI works, the tool only talks to the AI provider, and it logs every request it sends.</li>
-<li>There's no option yet to run the AI on your own computer.</li>
+<li>Our classifiers hide PHI before anything reaches the AI sandbox.</li>
+<li>Every change the AI makes is tracked, so you can audit it.</li>
 </ul>
 </div>
-<div class=sticky><svg class=diagram viewBox='0 0 560 430' role=img aria-label='Recordings and patient details stay on your computer; redacted text goes to the AI provider, and every request is logged.'>
+<div class=sticky><svg class=diagram viewBox='0 0 560 430' role=img aria-label='Recordings stay on your computer; classifiers hide patient details before redacted text reaches the AI sandbox, and every change the AI makes is tracked.'>
 <rect class=frame x='12' y='26' width='356' height='388' rx='18'/><text class=lbl x='32' y='54'>YOUR COMPUTER</text>
 <rect class='box stay' x='34' y='76' width='190' height='44' rx='10'/><text x='50' y='103'>recordings .edf</text><text class=keep x='244' y='103'>stay here</text>
 <rect class=box x='34' y='150' width='250' height='44' rx='10'/><text x='50' y='177'>notes, spreadsheets, headers</text>
 <path class=arrow d='M159,194 L159,222'/><path class=tip d='M159,230 l-5,-9 l10,0 z'/>
-<rect class='box hot' x='34' y='232' width='250' height='44' rx='10'/><text x='50' y='259'>hide PHI <tspan class=violet>(rules, no AI)</tspan></text>
+<rect class='box hot' x='34' y='232' width='250' height='44' rx='10'/><text x='50' y='259'>hide PHI <tspan class=violet>(classifiers)</tspan></text>
 <path class=arrow d='M284,254 L440,254'/><path class=tip d='M448,254 l-9,-5 l0,10 z'/><text x='300' y='244'>redacted text</text>
-<rect class=box x='450' y='224' width='100' height='60' rx='10'/><text x='466' y='250'>AI</text><text x='466' y='270'>provider</text>
+<rect class=box x='450' y='224' width='100' height='60' rx='10'/><text x='466' y='250'>AI</text><text x='466' y='270'>sandbox</text>
 <path class=wire d='M370,254 L370,336 L286,336'/>
-<rect class=box x='34' y='314' width='250' height='44' rx='10'/><text x='50' y='341'>request log (every call)</text>
-</svg><svg class='diagram narrow' viewBox='0 0 340 480' role=img aria-label='Recordings and patient details stay on your computer; redacted text goes to the AI provider, and every request is logged.'>
+<rect class=box x='34' y='314' width='250' height='44' rx='10'/><text x='50' y='341'>tracked changes (audit)</text>
+</svg><svg class='diagram narrow' viewBox='0 0 340 480' role=img aria-label='Recordings stay on your computer; classifiers hide patient details before redacted text reaches the AI sandbox, and every change the AI makes is tracked.'>
 <rect class=frame x='8' y='22' width='324' height='336' rx='18'/><text class=lbl x='26' y='50'>YOUR COMPUTER</text>
 <rect class='box stay' x='26' y='70' width='172' height='42' rx='10'/><text x='40' y='96'>recordings .edf</text><text class=keep x='212' y='96'>stay here</text>
 <rect class=box x='26' y='136' width='250' height='42' rx='10'/><text x='40' y='162'>notes, spreadsheets, headers</text>
 <path class=arrow d='M151,178 L151,198'/><path class=tip d='M151,206 l-5,-9 l10,0 z'/>
-<rect class='box hot' x='26' y='208' width='250' height='42' rx='10'/><text x='40' y='234'>hide PHI <tspan class=violet>(rules, no AI)</tspan></text>
-<rect class=box x='26' y='290' width='250' height='42' rx='10'/><text x='40' y='316'>request log (every call)</text>
+<rect class='box hot' x='26' y='208' width='250' height='42' rx='10'/><text x='40' y='234'>hide PHI <tspan class=violet>(classifiers)</tspan></text>
+<rect class=box x='26' y='290' width='250' height='42' rx='10'/><text x='40' y='316'>tracked changes (audit)</text>
 <path class=arrow d='M276,229 L300,229 L300,404'/><path class=tip d='M300,412 l-5,-9 l10,0 z'/><path class=wire d='M300,311 L276,311'/>
 <text x='290' y='392' text-anchor='end'>redacted text</text>
-<rect class=box x='240' y='414' width='92' height='56' rx='10'/><text x='254' y='438'>AI</text><text x='254' y='458'>provider</text>
+<rect class=box x='240' y='414' width='92' height='56' rx='10'/><text x='254' y='438'>AI</text><text x='254' y='458'>sandbox</text>
 </svg></div>
 </div>
 </section>
@@ -404,7 +263,7 @@ sub-02/ieeg/...</pre>
 <div class="wrap split fade">
 <div class=sticky>
 <div class=mock>
-<div class=mock-top><span>Track changes</span><span>mockup</span></div>
+<div class=mock-top><span>Track changes</span><span>example</span></div>
 <table>
 <thead><tr><th>Change</th><th>Made by</th><th>Status</th></tr></thead>
 <tbody>
@@ -416,7 +275,7 @@ sub-02/ieeg/...</pre>
 </div>
 </div>
 <div>
-<p class=eyebrow>Next · not built yet</p>
+<p class=eyebrow>Analysis</p>
 <h2>When you analyze it later</h2>
 <ul class=rows>
 <li>Try analysis steps with AI, like re-referencing or filtering, without touching the raw data.</li>
@@ -427,15 +286,22 @@ sub-02/ieeg/...</pre>
 </section>
 
 <section class=card>
-<div class=wrap><div class='section-head fade'>
-<p class=eyebrow>Other tools</p>
-<h2>How it compares</h2>
-<ul class=rows>
-<li>Auto-BIDSify uses AI to convert MRI, fNIRS and EEG data to BIDS. ezBIDS walks you through converting MRI data. NeuroConv converts recordings to NWB.</li>
-<li>MNE-BIDS can write iEEG to BIDS, but you write the script and track down the details yourself.</li>
-<li>Ours is built for iEEG. It hides patient details before the AI sees anything. Then it asks what it couldn't find and tells you what looks wrong, like the demo's coordinates.</li>
-</ul>
-</div></div>
+<div class=wrap>
+<div class='section-head fade'>
+<p class=eyebrow>What you get</p>
+<h2 class=wide>Complete data, and a safe place to explore it</h2>
+</div>
+<div class='pillars fade'>
+<div class=pillar><p class=num>01</p><h3>The most complete record of your data</h3>
+<ul><li>Add context right after a session, while it's fresh.</li>
+<li>AI pulls the details out of your files: amplifier, reference, bad channels and events.</li>
+<li>AI converts your recordings to standard formats: BIDS and NWB.</li></ul></div>
+<div class=pillar><p class=num>02</p><h3>AI you can trace, in a sandbox</h3>
+<ul><li>Experiment with analyses, make figures and find patterns faster.</li>
+<li>Every AI step is tracked, so you can audit it.</li>
+<li>Try more ideas without risking patient privacy or your original files.</li></ul></div>
+</div>
+</div>
 </section>
 
 <section class="card grades-card" id=grades>
@@ -450,7 +316,7 @@ sub-02/ieeg/...</pre>
 <section class="card final">
 <div class=wrap>
 <h2>Try it on one of your studies</h2>
-<p class=lede>We'll set it up with you on your own computer, so the recordings stay with you.</p>
+<p class=lede>We'll help you get started.</p>
 <a class=pill href="https://calendly.com/jamessmu/call">Book a call</a>
 </div>
 </section>
@@ -458,27 +324,7 @@ sub-02/ieeg/...</pre>
 <footer class=foot><span>brain-bench</span><span><a href='./'>Home</a><a href='grades.html'>Dataset grades</a><a href='https://github.com/jamesmu03/brain-bench'>GitHub</a></span></footer>
 <script>
 (function () {
-  var box = document.querySelector(".demo");
-  if (!box) return;
-  var steps = box.querySelectorAll(".demo-step"), i = 0;
-  var num = box.querySelector(".demo-top b");
-  var back = box.querySelector("[data-go='-1']"), next = box.querySelector("[data-go='1']");
-  function show(n) {
-    i = Math.max(0, Math.min(steps.length - 1, n));
-    steps.forEach(function (s, k) { s.hidden = k !== i; });
-    num.textContent = i + 1;
-    back.disabled = i === 0;
-    next.disabled = i === steps.length - 1;
-  }
-  back.addEventListener("click", function () { show(i - 1); });
-  next.addEventListener("click", function () { show(i + 1); });
-  box.classList.add("js");
-  show(0);
-})();
-</script>
-<script>
-(function () {
-  var stack = document.querySelector(".stack"), reveals = document.querySelectorAll(".reveal");
+  var stack = document.querySelector(".stack");
   var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   function tick() {
     var vh = window.innerHeight;
@@ -487,12 +333,6 @@ sub-02/ieeg/...</pre>
       var p = Math.min(Math.max((vh - r.top) / (vh + r.height * 0.6), 0), 1);
       stack.style.setProperty("--s", (0.12 + 0.88 * p).toFixed(3));
     }
-    reveals.forEach(function (el) {
-      var spans = el.querySelectorAll("span"), r = el.getBoundingClientRect();
-      var p = still ? 1 : Math.min(Math.max((vh * 0.9 - r.top) / (vh * 0.55), 0), 1);
-      var on = Math.round(p * spans.length);
-      spans.forEach(function (s, k) { s.classList.toggle("on", k < on); });
-    });
   }
   var io = "IntersectionObserver" in window ? new IntersectionObserver(function (es) {
     es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });

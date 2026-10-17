@@ -1,15 +1,13 @@
 # brain-bench
 
-AI-native data management for neuroscience. We're building a data platform to
-speed up neuroscience research loops, starting with intracranial EEG (iEEG)
-labs that need to share their data under NIH rules.
+AI-native data management for neuroscience. Science at the speed of compute.
 
-Demo and dataset grades: https://jamesmu03.github.io/brain-bench/
+Site and dataset grades: https://jamesmu03.github.io/brain-bench/
 
 ## What works today
 
 After a recording session, an AI agent turns a lab's study folder into a BIDS
-dataset:
+or NWB dataset:
 
 - Patient names, record numbers and dates are found and hidden on your
   computer before any AI sees the folder. The recordings never leave it.
@@ -18,10 +16,9 @@ dataset:
   types, bad channels, events, electrode positions and ethics approval.
 - It asks you only what it can't find, and flags what doesn't add up.
 - Once you approve, it writes the dataset and checks it with the official
-  BIDS validator.
+  BIDS validator or the NWB Inspector.
 
-NWB output is next. The agent isn't in this repository yet. To try it on one
-of your studies, [book a call](https://calendly.com/jamessmu/call).
+The agent isn't in this repository yet. To try it on one of your studies, [book a call](https://calendly.com/jamessmu/call).
 
 ## What's in this repository
 
