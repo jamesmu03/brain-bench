@@ -32,6 +32,17 @@ text-decoration:none;font-weight:500;font-size:15px;border:1px solid var(--fg);w
 .pill.ghost{background:transparent;color:var(--fg);border-color:var(--line2)}
 .pill.ink{background:var(--ink);color:#fff;border-color:var(--ink)}
 .nav .pill{padding:8px 15px;font-size:14px}
+.menu{display:none}
+.menu summary{list-style:none;display:grid;place-items:center;width:40px;height:40px;border-radius:999px;border:1px solid rgba(17,17,19,.16);color:var(--ink);cursor:pointer}
+.menu summary::-webkit-details-marker{display:none}
+.menu svg{width:20px;height:20px}
+.menu .x,.menu[open] .bars{display:none}
+.menu[open] .x{display:block}
+.menu-panel{position:absolute;left:0;right:0;top:100%;display:flex;flex-direction:column;padding:4px 16px 12px;background:#fff;
+border-bottom:1px solid rgba(17,17,19,.08);box-shadow:0 18px 30px rgba(0,0,0,.08)}
+.menu-panel a{padding:14px 4px;font-size:18px;color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(17,17,19,.08)}
+.menu-panel a:last-child{border-bottom:0}
+.card[id]{scroll-margin-top:60px}
 .card{margin:0 var(--gut) var(--gut);border-radius:var(--r);background:var(--bg);color:var(--fg);position:relative;overflow:hidden;padding:110px 0}
 .card::before{content:"";position:absolute;inset:0;pointer-events:none;
 background:linear-gradient(to right,transparent calc(50% - 561px),rgba(255,255,255,.07) calc(50% - 561px),rgba(255,255,255,.07) calc(50% - 560px),transparent calc(50% - 560px),
@@ -52,7 +63,7 @@ footer.foot{padding:26px calc(var(--gut) + 16px) 40px;color:#77777e;font-size:14
 footer.foot a{text-decoration:none;margin-left:22px}
 footer.foot a:hover{color:var(--ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
-@media (max-width:720px){:root{--gut:8px;--r:18px}.nav-links a.hide-sm{display:none}.nav-links{gap:16px}.card{padding:56px 0}
+@media (max-width:720px){:root{--gut:8px;--r:18px}.nav-links a.hide-sm{display:none}.menu{display:block}.nav-links{gap:16px}.card{padding:56px 0}
 .rows li{font-size:17px}.wrap{padding:0 20px}.nav .bar{padding:0 16px}
 footer.foot{flex-direction:column;gap:8px}footer.foot a{margin:0 20px 0 0}}
 
@@ -104,7 +115,7 @@ font-size:13px;line-height:1.5;opacity:0;visibility:hidden;z-index:20;pointer-ev
 </style></head>
 <body>
 <a class=announce href='./#demo'>How we fill these gaps right after a session: <b>see the demo</b> ↗</a>
-<nav class=nav><div class=bar><a class=brand href='./'><svg viewBox='0 0 24 24' aria-hidden='true'><rect x='1.5' y='1.5' width='21' height='21' rx='6' fill='none' stroke='currentColor' stroke-width='1.6'/><polyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'/></svg><span>brain-bench</span></a><div class=nav-links><a class='hide-sm' href='./#demo'>Demo</a><a class='hide-sm' href='./#privacy'>Privacy</a><a class='' href='grades.html'>Grades</a><a class='pill ink' href='https://calendly.com/jamessmu/call'>Book a call</a></div></div></nav>
+<nav class=nav><div class=bar><a class=brand href='./'><svg viewBox='0 0 24 24' aria-hidden='true'><rect x='1.5' y='1.5' width='21' height='21' rx='6' fill='none' stroke='currentColor' stroke-width='1.6'/><polyline points='4,13 7,13 9,7 12,18 14.5,10 16.5,14 20,14' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'/></svg><span>brain-bench</span></a><div class=nav-links><a class=hide-sm href='./#demo'>Demo</a><a class=hide-sm href='./#privacy'>Privacy</a><a class=hide-sm href='grades.html'>Grades</a><a class='pill ink' href='https://calendly.com/jamessmu/call'>Book a call</a><details class=menu><summary aria-label='Menu'><svg class=bars viewBox='0 0 24 24' aria-hidden='true'><path d='M4 9h16M4 15h16' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg><svg class=x viewBox='0 0 24 24' aria-hidden='true'><path d='M6 6l12 12M18 6 6 18' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'/></svg></summary><div class=menu-panel><a href='./#demo'>Demo</a><a href='./#privacy'>Privacy</a><a href='grades.html'>Grades</a></div></details></div></div></nav><script>document.querySelectorAll('.menu').forEach(function (m) {m.addEventListener('click', function (e) { if (e.target.closest('.menu-panel a')) m.open = false; });document.addEventListener('click', function (e) { if (!m.contains(e.target)) m.open = false; }); });</script>
 <header class="card ghead">
 <div class=wrap>
 <p class=eyebrow>Dataset grades</p>
