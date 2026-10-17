@@ -115,6 +115,7 @@ font-size:13px;line-height:1.5;opacity:0;visibility:hidden;z-index:20;pointer-ev
 .sheet{position:fixed;left:10px;right:10px;bottom:10px;z-index:40;padding:16px 18px 18px;border-radius:16px;background:#fff;color:#111;
 font-size:15px;line-height:1.5;box-shadow:0 20px 60px rgba(0,0,0,.45)}
 .sheet[hidden]{display:none}
+.sheet a{display:inline-block;margin-top:8px;color:#111;font-weight:500}
 @media (hover:none){.tip .bubble{display:none}.tip,.miss span[title]{cursor:pointer}.tip::after{content:"";position:absolute;inset:-12px}}
 @media (max-width:600px){.ghead{padding:56px 0 44px}.bar{grid-template-columns:1fr 44px;gap:6px 12px}.bar .track{grid-column:1/-1;grid-row:2}.tip .bubble{width:260px}
 #ds,#ds thead,#ds tbody{display:block}#ds tr{display:grid;grid-template-columns:40px minmax(0,1fr) auto;column-gap:12px;align-items:start}
@@ -195,16 +196,26 @@ font-size:15px;line-height:1.5;box-shadow:0 20px 60px rgba(0,0,0,.45)}
   var sheet = document.querySelector(".sheet"), current = null;
   function hide() { sheet.hidden = true; current = null; }
   function show(t) {
+    var b = document.createElement("b");
     if (t.classList.contains("tip")) sheet.innerHTML = t.querySelector(".bubble").innerHTML;
-    else { var b = document.createElement("b"); b.textContent = t.textContent; sheet.replaceChildren(b, t.title); }
+    else if (t.classList.contains("w")) {
+      var p = t.title.split(" · "), a = document.createElement("a");
+      b.textContent = p[0] + " · grade " + p[1];
+      a.href = t.href;
+      a.textContent = "Open on " + (t.hostname.indexOf("dandi") >= 0 ? "DANDI" : "OpenNeuro") + " ↗";
+      sheet.replaceChildren(b, p.slice(2).join(" · "), document.createElement("br"), a);
+    } else { b.textContent = t.textContent; sheet.replaceChildren(b, t.title); }
     sheet.hidden = false;
     current = t;
   }
   document.addEventListener("click", function (e) {
-    var t = e.target.closest(".tip, .miss span[title]");
-    if (t) t === current ? hide() : show(t);
+    var t = e.target.closest(".tip, .miss span[title], .wall .w");
+    if (!t) return;
+    if (t.classList.contains("w")) e.preventDefault();
+    t === current ? hide() : show(t);
   });
-  document.addEventListener("pointerdown", function (e) { if (current && !current.contains(e.target)) hide(); });
+  document.addEventListener("pointerdown", function (e) { if (current && !current.contains(e.target) && !sheet.contains(e.target)) hide(); });
+  sheet.addEventListener("click", function (e) { if (!e.target.closest("a")) hide(); });
   window.addEventListener("scroll", function () { if (current) hide(); }, { passive: true });
 })();
 </script>
