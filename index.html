@@ -126,7 +126,6 @@ transform:translate(-50%,-50%) rotateX(var(--rx)) rotateY(var(--ry)) translateX(
 color:#d6d6da!important;font:12.5px ui-monospace,"SF Mono",Menlo,monospace;color:#3a3a3f;animation:float 8s ease-in-out infinite}
 .tile b{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;font:600 14px/1 -apple-system,BlinkMacSystemFont,sans-serif;color:#111113}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-.final{text-align:center}
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:start}
 .split .sticky{position:sticky;top:100px}
 .split h2{margin-top:18px}
@@ -160,8 +159,6 @@ h2.wide{max-width:24ch}
 .pillar ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .pillar li{padding:14px 0;border-bottom:1px solid var(--line);color:#dadadd;font-size:16.5px;line-height:1.5}
 @media (max-width:900px){.pillars{grid-template-columns:1fr}}
-.final h2{margin:0 auto 18px;max-width:16ch}
-.final .lede{max-width:44ch;margin:0 auto 34px}
 @media (max-width:720px){.offer{padding:22px 20px 20px}.pillar{padding:24px 20px 22px}.pillar h3{font-size:23px}.split .mock{margin-top:0}.mock td,.mock th{padding:12px;font-size:14px}}
 @media (max-width:720px){.grades-card{padding:64px 0;display:flex;flex-direction:column}.grades-inner{order:1}.tiles{order:2;position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:36px 16px 0}.tile{position:static;animation:none}.tile:nth-child(n+7){display:none}}
 @media (prefers-reduced-motion:reduce){.tile{animation:none}}
@@ -188,7 +185,7 @@ h2.wide{max-width:24ch}
 <div class=wrap>
 <h1>AI-native data management for neuroscience</h1>
 <p class=lede>Science at the speed of compute.</p>
-<div class=ctas><a class="pill ghost" href="#demo">How it works</a></div>
+<div class=ctas><a class=pill href="#demo">How it works</a></div>
 </div>
 <div class=stack aria-hidden=true>
 <div class="layer l-bids"><svg viewBox='0 0 1000 560' preserveAspectRatio='none'><text x='36' y='70'>bids/</text><text x='36' y='110'>├─ dataset_description.json</text><text x='36' y='150'>├─ participants.tsv</text><text x='36' y='190'>├─ provenance.json</text><text x='36' y='230'>└─ sub-01/ieeg/</text><text x='36' y='270'>   ├─ sub-01_task-SlowFast_ieeg.edf</text><text x='36' y='310'>   ├─ sub-01_task-SlowFast_channels.tsv</text><text x='36' y='350'>   ├─ sub-01_task-SlowFast_events.tsv</text><text x='36' y='390'>   └─ sub-01_space-ACPC_electrodes.tsv</text><text x='36' y='506' class=ok>BIDS validator: 0 errors</text></svg></div>
@@ -310,14 +307,6 @@ h2.wide{max-width:24ch}
 <h2>We graded every iEEG dataset on <span class=tone>OpenNeuro and DANDI</span></h2>
 <p>All 77 of them. Most are missing details the lab already knew, like the amplifier, the reference or the ethics approval.</p>
 <a class=pill href="grades.html">See the grades</a>
-</div>
-</section>
-
-<section class="card final">
-<div class=wrap>
-<h2>Try it on one of your studies</h2>
-<p class=lede>We'll help you get started.</p>
-
 </div>
 </section>
 
